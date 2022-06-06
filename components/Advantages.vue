@@ -1,5 +1,5 @@
 <template>
     <div>
-        <h1>Header</h1>
+        <h2>Les Avantages</h2>
     </div>
 </template>

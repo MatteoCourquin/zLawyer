@@ -1,5 +1,5 @@
 <template>
     <div>
-        <h1>Header</h1>
+        <h2>Ils nous font confiance</h2>
     </div>
 </template>
