@@ -1,5 +1,5 @@
 <template>
     <div>
-        <h2>zLawyer s’adapte a votre organisation</h2>
+        <h2 class="text-orange">zLawyer s’adapte a votre organisation</h2>
     </div>
 </template>

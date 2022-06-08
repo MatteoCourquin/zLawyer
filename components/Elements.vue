@@ -1,17 +1,19 @@
 <template>
-    <div class="p-10 border-2">
+    <div class="py-10 border-t-8 border-black">
         <h1>h1 • Roboto-Black</h1>
-        <h2>h1 • Roboto-Black</h2>
-        <h3>h1 • Roboto-Medium</h3>
-        <h4>h1 • Roboto-Regular</h4>
-        <p>h1 • Roboto-Regular</p>
-        <h1 class="subtitle">Sous-titre • Roboto-Light</h1>
-        <div class="p-10 bg-white"></div>
-        <div class="p-10 bg-light-blue"></div>
-        <div class="p-10 bg-blue"></div>
-        <div class="p-10 bg-dark-blue"></div>
-        <div class="p-10 bg-midnight-blue"></div>
-        <div class="p-10 bg-orange"></div>
-        <div class="p-10 bg-black"></div>
+        <h2>h2 • Roboto-Black</h2>
+        <h3>h3 • Roboto-Medium</h3>
+        <h4>h4 • Roboto-Regular</h4>
+        <p>p • Roboto-Regular</p>
+        <p>Texte <span class="text-underline">souligné</span></p>
+        <p>Texte <span class="text-bolder">souligné</span></p>
+        <p class="subtitle">Sous-titre • Roboto-Light</p>
+        <div class="p-10 bg-white"><p class="text-black">white</p></div>
+        <div class="p-10 bg-light-blue"><p class="text-black">light-blue</p></div>
+        <div class="p-10 bg-blue"><p class="text-black">blue</p></div>
+        <div class="p-10 bg-dark-blue"><p class="text-white">dark-blue</p></div>
+        <div class="p-10 bg-midnight-blue"><p class="text-white">midnight-blue</p></div>
+        <div class="p-10 bg-orange"><p class="text-black">orange</p></div>
+        <div class="p-10 bg-black"><p class="text-white">black</p></div>
     </div>
 </template>

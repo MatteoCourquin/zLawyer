@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: 'Roboto-Light';
     src: font-url('~/assets/fonts/roboto/Roboto-Light.ttf') format('truetype');
@@ -16,21 +15,63 @@
     src: font-url('~/assets/fonts/roboto/Roboto-Black.ttf') format('truetype');
 }
 
+:root{
+    --color-white: #ffffff;
+    --color-light-blue: #F1F5F9;
+    --color-blue: #CBD5E1;
+    --color-dark-blue: #5E6A7B;
+    --color-midnight-blue: #222E3E;
+    --color-orange: #ED630F;
+    --color-black: #0A0A0A;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-midnight-blue);
+}
+p, .subtitle{
+    color: var(--color-dark-blue);
+}
 h1{
     font-family: 'Roboto-Black';
+    font-size: clamp(3rem, 5vw, 7rem);
 }
 h2{
     font-family: 'Roboto-Black';
+    font-size: clamp(2rem, 3vw, 4rem);
 }
 h3{
     font-family: 'Roboto-Medium';
+    font-size: clamp(0.5rem, 1vw, 2rem);
 }
 h4{
     font-family: 'Roboto-Regular';
+    font-size: clamp(0.4rem, 0.8vw, 1.8rem);
 }
 p{
-    font-family: 'Roboto-Regular';
+    font-family: 'Roboto-Light';
+    font-size: 1rem;
+}
+p .text-bolder{
+    font-family: 'Roboto-regular';
+    font-size: 1rem;
 }
 .subtitle{
     font-family: 'Roboto-Light';
+    font-size: 1rem;
+}
+
+
+.text-underline{
+    position: relative;
+}
+.text-underline::before {
+    content: "";
+    position: absolute;
+    border-radius: 999px;
+    left: 5px;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--color-orange);
+    z-index: -1;
 }

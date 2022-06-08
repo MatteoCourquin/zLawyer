@@ -12,9 +12,9 @@ module.exports = {
             'orange': '#ED630F',
             'black': '#0A0A0A',
         },
-        fontFamily: {
-            // 'Roboto': ['roboto', 'sans-serif'],
-        },
+        // fontFamily: {
+        //     'Roboto': ['roboto', 'sans-serif'],
+        // },
     },
   },
   variants: {
