@@ -23,12 +23,25 @@
     --color-midnight-blue: #222E3E;
     --color-orange: #ED630F;
     --color-black: #0A0A0A;
+
+    --transition-small: 0.1s;
+    --transition-medium: 0.3s;
 }
+
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+/* *** Typo *** */
 
 h1, h2, h3, h4, h5, h6 {
     color: var(--color-midnight-blue);
 }
-p, .subtitle{
+p, .subtitle, a, li{
     color: var(--color-dark-blue);
 }
 h1{
@@ -60,6 +73,12 @@ p .text-bolder{
     font-size: 1rem;
 }
 
+.text-link{
+    transition: var(--transition-small);
+}
+.text-link:hover{
+    color: var(--color-orange);
+}
 
 .text-underline{
     position: relative;
@@ -74,4 +93,39 @@ p .text-bolder{
     height: 4px;
     background: var(--color-orange);
     z-index: -1;
+}
+
+
+/* *** Components *** */
+
+.button-orange, .button-transparent{
+    padding: 10px 20px;
+    border-radius: 999px;
+    border: 2px solid var(--color-orange);
+    cursor: pointer;
+    transition: var(--transition-medium);
+}
+
+.button-transparent{
+    background-color: transparent;
+    color: var(--color-orange);
+}
+.button-transparent a{
+    color: var(--color-orange);
+}
+.button-transparent:hover{
+    background-color: var(--color-orange);
+    color: var(--color-white);
+}
+
+.button-orange{
+    background-color: var(--color-orange);
+    color: var(--color-white);
+}
+.button-orange a{
+    color: var(--color-white);
+}
+.button-orange:hover{
+    background-color: transparent;
+    color: var(--color-orange);
 }
