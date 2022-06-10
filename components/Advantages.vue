@@ -1,9 +1,9 @@
 <template>
-    <div class="max-width-blue-section">
+    <div class="max-width-blue-section" id="solutions">
         <h2>Les Avantages</h2>
         <p class="subtitle md:w-2/3 xl:w-1/2">La puissance de zLawyer réside dans son parfait équilibre entre <span class="text-bolder">simplicité d’utilisation, richesse fonctionnelle et la qualité approuvée du service support.</span></p>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:px-8">
             <!-- Card Advantages Exhaustivité -->
             <div class="card-advantages">
                 <div class="card-advantages-head">
@@ -70,7 +70,7 @@
     .card-advantages {
         box-shadow: 0px 0px 20px var(--color-blue);
         background-color: var(--color-white);
-        border-radius: var(--radius-main);
+        border-radius: var(--radius-current);
         padding: 80px 50px;
         position: relative;
     }

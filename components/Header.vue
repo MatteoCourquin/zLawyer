@@ -1,13 +1,24 @@
 <template>
-    <div class="max-w-max-width-screen mx-auto h-32 flex items-center justify-between px-8 py-6">
+    <div class="header mx-auto h-32 flex items-center justify-between px-8 py-6 w-full">
+
         <img src="~/assets/images/logos/logo-zele.png" class="h-full"/>
-        <ul class="items-center hidden xl:flex header-nav" :class="{ active: isActive }">
-            <li class="ml-10"><a class="text-link" href="#">Solutions</a></li>
-            <li class="ml-10"><a class="text-link" href="#">Fonctionnalités</a></li>
-            <li class="ml-10"><a class="text-link" href="#">Nos Clients</a></li>
+
+        <ul class="items-center hidden xl:flex header-nav">
+            <li class="ml-10"><a class="text-link" href="#solutions">Solutions</a></li>
+            <li class="ml-10"><a class="text-link" href="#fonctionnalites">Fonctionnalités</a></li>
+            <li class="ml-10"><a class="text-link" href="#clients">Nos Clients</a></li>
             <li class="ml-10"><a class="text-link" href="#">Web App</a></li>
             <li class="ml-10"><a class="text-link" href="#"><button class="button-orange">Contact</button></a></li>
         </ul>
+
+        <ul class="items-center hidden header-nav" :class="{ active : isActive }">
+            <li class="ml-10"><a @click="isActive = !isActive" class="text-link" href="#solutions">Solutions</a></li>
+            <li class="ml-10"><a @click="isActive = !isActive" class="text-link" href="#fonctionnalites">Fonctionnalités</a></li>
+            <li class="ml-10"><a @click="isActive = !isActive" class="text-link" href="#clients">Nos Clients</a></li>
+            <li class="ml-10"><a @click="isActive = !isActive" class="text-link" href="#">Web App</a></li>
+            <li class="ml-10"><a @click="isActive = !isActive" class="text-link" href="#"><button class="button-orange">Contact</button></a></li>
+        </ul>
+
         <div class="burger block xl:hidden">
             <div class="btn_burger btn1" :class="{ active: isActive }" @click="isActive = !isActive">
                 <div class="lignes"></div>
@@ -29,8 +40,16 @@
 </script>
 
 <style scoped>
+
+    .header {
+        max-width: 1920px;
+        z-index: 99999999;
+        position: fixed;
+        -webkit-backdrop-filter: blur(15px);
+        backdrop-filter: blur(15px);
+    }
     .btn_burger{
-        width: 60px;
+        width: 40px;
         height: 70px;
         position: relative;
         cursor: pointer;
@@ -47,10 +66,10 @@
         top: 0px;
     }
     .lignes:nth-child(2){
-        top: 18px;
+        top: 16px;
     }
     .lignes:nth-child(3){
-        top: 36px;
+        top: 32px;
     }
     .active.btn1 .lignes{
         background-color: var(--color-white);
@@ -67,13 +86,12 @@
         top: 18px;
         transform: rotate(-135deg);
     }
-
     .active.header-nav{
         position: absolute;
         right: 0;
         width: 50%;
-        height: 100%;
-        background: #0a0a0ab4;
+        height: 100vh;
+        background: #0a0a0ae2;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -99,7 +117,7 @@
 
     @keyframes toTopBurger {
         from{
-            top: -100%;
+            top: -100vh;
         }
         to{
             top: 0;
