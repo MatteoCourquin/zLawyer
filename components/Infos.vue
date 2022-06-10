@@ -3,7 +3,7 @@
         <div class="max-width-white-section-content flex flex-col items-center">
             <h2 class="text-orange">Une réponse simple à vos questions</h2>
 
-            <div class="mt-4 lg:w-5/6 grid grid-rows-2 md:grid-cols-2 items-center">
+            <div class="mt-4 lg:w-5/6 grid grid-rows-2 md:grid-cols-2 gap-4 items-center">
 
               <div class="sm:w-5/6 flex flex-col justify-start">
 
