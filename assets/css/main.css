@@ -44,13 +44,23 @@ a{
 .max-width-white-section .max-width-white-section-content{
     max-width: 1920px;
     margin: 0 auto;
-    padding: 80px 2rem;
+    padding: 80px 4rem;
+}
+@media screen and (max-width : 1000px) {
+    .max-width-white-section{
+        padding: 80px 2rem;
+    }
 }
 
 .max-width-blue-section{
     max-width: 1920px;
     margin: 0 auto;
-    padding: 80px 2rem;
+    padding: 80px 4rem;
+}
+@media screen and (max-width : 1000px) {
+    .max-width-blue-section{
+        padding: 80px 2rem;
+    }
 }
 
 /* *** Typo *** */
@@ -63,7 +73,8 @@ p, .subtitle, a, li{
 }
 h1{
     font-family: 'Roboto-Black';
-    font-size: clamp(3rem, 5vw, 7rem);
+    font-size: clamp(2.5rem, 4vw, 5rem);
+    line-height: clamp(2.5rem, 4vw, 5rem);
 }
 h2{
     font-family: 'Roboto-Black';
