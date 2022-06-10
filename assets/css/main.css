@@ -28,6 +28,9 @@
     --transition-medium: 0.3s;
 }
 
+body{
+    background-color: var(--color-light-blue);
+}
 li{
     list-style-type: none;
 }
@@ -35,6 +38,20 @@ a{
     text-decoration: none;
 }
 
+.max-width-white-section{
+    background: var(--color-white);
+}
+.max-width-white-section .max-width-white-section-content{
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 80px 2rem;
+}
+
+.max-width-blue-section{
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 80px 2rem;
+}
 
 /* *** Typo *** */
 

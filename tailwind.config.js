@@ -13,10 +13,13 @@ module.exports = {
             'black': '#0A0A0A',
         },
         // fontFamily: {
-        //     'Roboto': ['roboto', 'sans-serif'],
-        // },
+            //     'Roboto': ['roboto', 'sans-serif'],
+            // },
+        },
     },
-  },
+    maxWidth: {
+        'max-width-screen': '1920px',
+    },
   variants: {
     extend: {},
   },

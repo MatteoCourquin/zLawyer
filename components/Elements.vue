@@ -23,10 +23,10 @@
 
         <!-- Colors -->
         <div class="p-10 bg-white"><p class="text-black">white</p></div>
-        <div class="p-10 bg-light-blue"><p class="text-black">light-blue</p></div>
-        <div class="p-10 bg-blue"><p class="text-black">blue</p></div>
-        <div class="p-10 bg-dark-blue"><p class="text-white">dark-blue</p></div>
-        <div class="p-10 bg-midnight-blue"><p class="text-white">midnight-blue</p></div>
+        <div class="p-10 bg-light-blue"><p class="text-black">light-blue - Fond</p></div>
+        <div class="p-10 bg-blue"><p class="text-black">blue - Ombres</p></div>
+        <div class="p-10 bg-dark-blue"><p class="text-white">dark-blue - Titres & Textes</p></div>
+        <div class="p-10 bg-midnight-blue"><p class="text-white">midnight-blue - Main </p></div>
         <div class="p-10 bg-orange"><p class="text-black">orange</p></div>
         <div class="p-10 bg-black"><p class="text-white">black</p></div>
     </div>
