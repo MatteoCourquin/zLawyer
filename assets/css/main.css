@@ -46,7 +46,7 @@ a{
     text-decoration: none;
 }
 
-.max-width-white-section{
+.max-width-white-section {
     background: var(--color-white);
 }
 .max-width-white-section-content{
@@ -72,6 +72,10 @@ a{
     .max-width-blue-section{
         padding: 80px 2rem;
     }
+}
+
+.border-element {
+  border-radius: 10px;
 }
 
 /* *** Typo *** */
@@ -169,3 +173,11 @@ p .text-bolder{
     background-color: transparent;
     color: var(--color-orange);
 }
+
+.pricingText {
+  color: var(--color-orange);
+  font-family: 'Roboto-regular';
+  font-weight: 600;
+}
+
+
