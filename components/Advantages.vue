@@ -51,6 +51,7 @@
 
             <!-- Card Advantages Évolutif -->
             <div class="card-advantages">
+                <img class="panda-side hidden md:block absolute h-40" src="~/assets/images/pandas/panda-side.png" alt="panda">
                 <div class="card-advantages-head">
                     <h3>Évolutif</h3>
                     <svg class="logo-advantages" id="Groupe_2" data-name="Groupe 2" xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54">
@@ -71,6 +72,7 @@
         background-color: var(--color-white);
         border-radius: var(--radius-main);
         padding: 80px 50px;
+        position: relative;
     }
     .card-advantages h3{
         color: var(--color-orange);
@@ -92,6 +94,10 @@
             margin-bottom: 30px;
             align-self: flex-end;
         }
+    }
+
+    .panda-side{
+        left: -88px;
     }
 
 </style>
