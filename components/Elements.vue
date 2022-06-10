@@ -29,5 +29,28 @@
         <div class="p-10 bg-midnight-blue"><p class="text-white">midnight-blue - Main </p></div>
         <div class="p-10 bg-orange"><p class="text-black">orange</p></div>
         <div class="p-10 bg-black"><p class="text-white">black</p></div>
+
+        <!-- BG Contact & Connexion -->
+        <div class="relative w-full h-screen p-16 lg:px-28 overflow-hidden bg-gray-800">
+            <!-- Background -->
+            <!-- Rings -->
+            <svg class="absolute inset-0 pointer-events-none"
+                viewBox="0 0 960 540" width="100%" height="100%" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg">
+                <g class="text-gray-700 opacity-25" fill="none" stroke="currentColor" stroke-width="100">
+                    <circle r="234" cx="196" cy="23"></circle>
+                    <circle r="234" cx="790" cy="491"></circle>
+                </g>
+            </svg>
+            <!-- Dots -->
+            <svg class="absolute -top-16 -right-16 text-gray-700"
+                viewBox="0 0 220 192" width="220" height="192" fill="none">
+                <defs>
+                    <pattern id="837c3e70-6c3a-44e6-8854-cc48c737b659" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                        <rect x="0" y="0" width="4" height="4" fill="currentColor"></rect>
+                    </pattern>
+                </defs>
+                <rect width="220" height="192" fill="url(#837c3e70-6c3a-44e6-8854-cc48c737b659)"></rect>
+            </svg>
+        </div>
     </div>
 </template>
