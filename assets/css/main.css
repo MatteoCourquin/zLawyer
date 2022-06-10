@@ -26,6 +26,8 @@
 
     --transition-small: 0.1s;
     --transition-medium: 0.3s;
+
+    --radius-main: 20px;
 }
 
 body{
@@ -41,15 +43,10 @@ a{
 .max-width-white-section{
     background: var(--color-white);
 }
-.max-width-white-section .max-width-white-section-content{
+ .max-width-white-section-content{
     max-width: 1920px;
     margin: 0 auto;
     padding: 80px 4rem;
-}
-@media screen and (max-width : 1000px) {
-    .max-width-white-section{
-        padding: 80px 2rem;
-    }
 }
 
 .max-width-blue-section{
@@ -57,7 +54,15 @@ a{
     margin: 0 auto;
     padding: 80px 4rem;
 }
+.max-width-blue-section .subtitle{
+    margin-bottom: 80px;
+}
+
 @media screen and (max-width : 1000px) {
+    .max-width-white-section .max-width-white-section-content{
+        padding: 80px 2rem;
+    }
+
     .max-width-blue-section{
         padding: 80px 2rem;
     }
