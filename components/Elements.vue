@@ -52,5 +52,63 @@
                 <rect width="220" height="192" fill="url(#837c3e70-6c3a-44e6-8854-cc48c737b659)"></rect>
             </svg>
         </div>
+
+
+
+        <div class="card" 
+            v-for="(card, i) in cards" 
+            :key="card.id" 
+            ref="cards" 
+            @click="simpleFade(i)">
+        <div class="card-inner">
+            <div class="card-name">click</div>
+        </div>
+        </div>
     </div>
 </template>
+
+<script>
+
+import { gsap } from 'gsap';
+import { CSSPlugin } from 'gsap/CSSPlugin'
+gsap.registerPlugin(CSSPlugin);
+
+const myCards = [
+    {
+        id: 0,
+        name: 'Prima carta',
+    },
+    {
+        id: 1,
+        name: 'Seconda carta',
+    },
+    {
+        id: 2,
+        name: 'Terza carta',
+    },
+    {
+        id: 3,
+        name: 'Quarta carta',
+    }
+];
+
+export default {
+    name: 'TarocchiCards',
+    data() {
+        return {
+        cards: myCards,
+        };
+    },
+    methods: {
+        simpleFade(i) {
+            gsap.fromTo(this.$refs.cards[i], {
+                opacity: 1
+            }, {
+                opacity: 0,
+                duration: 0.35
+            });
+        }
+    },
+}
+
+</script>

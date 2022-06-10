@@ -54,6 +54,9 @@ a{
     margin: 0 auto;
     padding: 80px 4rem;
 }
+.max-width-white-section-content h2{
+    margin-bottom: 50px;
+}
 
 .max-width-blue-section{
     max-width: 1920px;
