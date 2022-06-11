@@ -6,7 +6,7 @@
         <!-- Card Features Facturation -->
         <div class="md:px-8">
             <div class="card-features">
-                <img src="~/assets/images/features/features-1.png" alt="fonctionnalitée facturation">
+                <img :src="features1" alt="fonctionnalité facturation">
                 <div class="card-features-description">
                     <h3><span class="text-underline">Facturation</span> <br> Arbitrer & gérer la rentabilité</h3>
                     <p>Que vous souhaitiez mesurer les temps réels passés, valoriser le coût global réel du dossier, faire vos arbitrages de facturation sans effacer les durées réelles et donc vos coûts réels, notre logiciel de facturation pour avocat vous offre la possibilité de mesurer efficacement la rentabilité de vos dossiers ou de vos forfaits …
@@ -25,14 +25,14 @@
                     </p>
                     <!-- <button class="button-transparent">Je souhaite une démonstration</button> -->
                 </div>
-                <img src="~/assets/images/features/features-1.png" alt="fonctionnalitée facturation">
+                <img :src="features1" alt="fonctionnalité facturation">
             </div>
         </div>
 
         <!-- Card Features Agenda -->
         <div class="md:px-8">
             <div class="card-features">
-                <img src="~/assets/images/features/features-1.png" alt="fonctionnalitée facturation">
+                <img :src="features1" alt="fonctionnalité facturation">
                 <div class="card-features-description">
                     <h3><span class="text-underline">Un agenda</span> partagé au cabinet</h3>
                     <p>Synchronisés avec Microsoft Outlook , vos rendez-vous – filtrables par dossier – se présentent sous forme d’ agenda ou d’échéancier à 7 jours. En 1 clic, vérifiez la disponibilité d’un autre utilisateur et conviez-le à des RDV. Avec la solution informatique zLawyer: chaque RDV peut faire l’objet d’une facturation.
@@ -51,14 +51,14 @@
                     </p>
                     <button class="button-transparent">Je souhaite une démonstration</button>
                 </div>
-                <img src="~/assets/images/features/features-1.png" alt="fonctionnalitée facturation">
+                <img :src="features1" alt="fonctionnalité facturation">
             </div>
         </div>
 
         <!-- Card Features Dossiers -->
         <div class="md:px-8">
             <div class="card-features">
-                <img src="~/assets/images/features/features-1.png" alt="fonctionnalitée facturation">
+                <img :src="features1" alt="fonctionnalité facturation">
                 <div class="card-features-description">
                     <h3><span class="text-underline">Dossiers</span> : l’information à portée de main</h3>
                     <p>Avec notre logiciel de gestion de dossiers d’avocat, pas besoin de menus complexes ou de longues manipulations pour tout retrouver. Chaque fenêtre de dossiers vous présente les informations essentielles le concernant :
@@ -78,14 +78,14 @@
                     </p>
                     <button class="button-transparent">Je souhaite une démonstration</button>
                 </div>
-                <img src="~/assets/images/features/features-1.png" alt="fonctionnalitée facturation">
+                <img :src="features1" alt="fonctionnalité facturation">
             </div>
         </div>
 
         <!-- Card Features Capture -->
         <div class="md:px-8">
             <div class="card-features">
-                <img src="~/assets/images/features/features-1.png" alt="fonctionnalitée facturation">
+                <img :src="features1" alt="fonctionnalité facturation">
                 <div class="card-features-description">
                     <h3><span class="text-underline">La capture</span> du temps qui passe</h3>
                     <p>Appels téléphoniques, rédaction d’actes, rendez-vous, audiences, réunions internes… Que vous facturiez aux temps ou au forfait, avec le logiciel de gestion de temps zLawyer : consignez bien, facturer mieux et gérer votre budget en un seul clic.
@@ -104,12 +104,26 @@
                     </p>
                     <button class="button-transparent">Je souhaite une démonstration</button>
                 </div>
-                <img src="~/assets/images/features/features-1.png" alt="fonctionnalitée facturation">
+                <img :src="features1" alt="fonctionnalité facturation">
             </div>
         </div>
 
     </div>
 </template>
+
+<script>
+
+import features1 from "../assets/images/features/features1.png";
+
+export default {
+    data: function () {
+        return {
+            features1: features1
+        }
+    },
+}
+
+</script>
 
 <style scoped>
     .card-features{

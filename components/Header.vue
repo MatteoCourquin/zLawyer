@@ -1,7 +1,7 @@
 <template>
     <div class="header mx-auto h-32 flex items-center justify-between px-8 py-6 w-full">
 
-        <img src="~/assets/images/logos/logo-zele.png" class="h-full"/>
+        <img :src="zeleLogo" class="h-full"/>
 
         <ul class="items-center hidden xl:flex header-nav">
             <li class="ml-10"><a class="text-link" href="#solutions">Solutions</a></li>
@@ -30,13 +30,20 @@
 </template>
 
 <script>
+
+    import zeleLogo from "../assets/images/logos/zeleLogo.svg";
+
     export default {
         data() {
             return {
                 isActive: false,
+                zeleLogo: zeleLogo,
             }
         },
     }
+
+
+
 </script>
 
 <style scoped>

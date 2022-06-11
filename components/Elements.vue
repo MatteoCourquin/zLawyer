@@ -55,7 +55,7 @@
 
 
 
-        <div class="card" 
+        <!-- <div class="card" 
             v-for="(card, i) in cards" 
             :key="card.id" 
             ref="cards" 
@@ -63,10 +63,10 @@
         <div class="card-inner">
             <div class="card-name">click</div>
         </div>
-        </div>
+        </div> -->
     </div>
 </template>
-
+<!-- 
 <script>
 
 import { gsap } from 'gsap';
@@ -111,4 +111,4 @@ export default {
     },
 }
 
-</script>
+</script> -->

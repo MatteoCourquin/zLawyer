@@ -5,11 +5,26 @@
             <button class="button-orange mt-14 w-max">Je souhaite une démonstration</button>
         </div>
         <div>
-            <img class="w-full" src="~/assets/images/hero/illustration-hero.png" alt="illustration du logiciel">
+            <img class="w-full" :src="illustrationHero" alt="illustration du logiciel">
             <h4 class="text-center hidden lg:block">La solution la mieux notée par vos confrères !</h4>
         </div>
     </div>
 </template>
+
+<script>
+
+import illustrationHero from "../assets/images/hero/illustrationHero.png";
+
+export default {
+    data: function () {
+        return {
+            illustrationHero: illustrationHero
+        }
+    },
+}
+
+</script>
+
 
 <style scoped>
 

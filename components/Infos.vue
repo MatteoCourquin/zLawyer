@@ -1,7 +1,7 @@
 <template>
     <div class="max-width-white-section">
         <div class="max-width-white-section-content flex flex-col items-center">
-            <h2 class="text-orange">Une réponse simple à vos questions</h2>
+            <h2 class="text-orange text-center">Une réponse simple à vos questions</h2>
 
             <div class="lg:w-5/6 grid grid-rows-2 md:grid-cols-2 gap-4 items-center">
 
@@ -57,12 +57,12 @@
 </template>
 
 <script>
-import infoIcon from '../assets/images/infoLogo/infoIcon.svg';
+import infoIcon from '../assets/images/logos/infoIcon.svg';
 
 export default {
     data() {
         return {
-            infoIcon
+            infoIcon : infoIcon
         }
     }
 
