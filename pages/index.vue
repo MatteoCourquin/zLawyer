@@ -1,8 +1,8 @@
 <template>
     <div>
-        <Header class="fixed"/>
+        <!-- <Header class="fixed"/> -->
         <Hero/>
-        <Reviews/>
+        <!-- <Reviews/> -->
         <Advantages/>
         <Adaptive/>
         <Features/>

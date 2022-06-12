@@ -53,6 +53,7 @@ a{
     max-width: 1920px;
     margin: 0 auto;
     padding: 80px 4rem;
+    overflow: hidden;
 }
 .max-width-white-section-content h2{
     margin-bottom: 50px;
@@ -62,6 +63,7 @@ a{
     max-width: 1920px;
     margin: 0 auto;
     padding: 80px 4rem;
+    overflow: hidden;
 }
 .max-width-blue-section .subtitle{
     margin-bottom: 80px;
