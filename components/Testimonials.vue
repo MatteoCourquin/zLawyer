@@ -2,9 +2,9 @@
     <div class="max-width-blue-section">
         <h2 class="mb-20">Ce qu’ils pensent de nous</h2>
 
-        <div class="slider-testimonials flex gap-10" :style="slideRight">
+        <div class="slider-testimonials flex  gap-10" :style="slider">
             <!-- Card Testimonials Client 1 -->
-            <div class="card-testimonial">
+            <div class="card-testimonial" ref="sliderCard">
                 <img class="quote" :src="quoteLogo" alt="checkIcon">
                 <img class="logo-client" :src="clientLogo2" alt="logo des clients">
                 <p>Après avoir fait une analyse des logiciels disponibles pour les cabinets d’avocats, nous avons choisi zLawyer car c’est celui qui nous a paru le plus complet et le plus intuitif d’utilisation.</p>
@@ -22,7 +22,25 @@
             </div>
 
             <!-- Card Testimonials Client 3 -->
-            <div class="card-testimonial" :style="btnStyles">
+            <div class="card-testimonial">
+                <img class="quote" :src="quoteLogo" alt="checkIcon">
+                <img class="logo-client" :src="clientLogo2" alt="logo des clients">
+                <p>Après avoir fait une analyse des logiciels disponibles pour les cabinets d’avocats, nous avons choisi zLawyer car c’est celui qui nous a paru le plus complet et le plus intuitif d’utilisation.</p>
+                <br>
+                <p>Après quelques mois d’utilisation, on peut dire que zLawyer à l’épreuve du terrain répond complètement à notre attente.</p>
+            </div>
+
+            <!-- Card Testimonials Client 4 -->
+            <div class="card-testimonial">
+                <img class="quote" :src="quoteLogo" alt="checkIcon">
+                <img class="logo-client" :src="clientLogo2" alt="logo des clients">
+                <p>Après avoir fait une analyse des logiciels disponibles pour les cabinets d’avocats, nous avons choisi zLawyer car c’est celui qui nous a paru le plus complet et le plus intuitif d’utilisation.</p>
+                <br>
+                <p>Après quelques mois d’utilisation, on peut dire que zLawyer à l’épreuve du terrain répond complètement à notre attente.</p>
+            </div>
+
+            <!-- Card Testimonials Client 5 -->
+            <div class="card-testimonial">
                 <img class="quote" :src="quoteLogo" alt="checkIcon">
                 <img class="logo-client" :src="clientLogo2" alt="logo des clients">
                 <p>Après avoir fait une analyse des logiciels disponibles pour les cabinets d’avocats, nous avons choisi zLawyer car c’est celui qui nous a paru le plus complet et le plus intuitif d’utilisation.</p>
@@ -32,10 +50,13 @@
         </div>
 
         <div class="flex justify-center gap-20 mt-10">
-            <img @click="slide = slide - 40, counter --" class="cursor-pointer" :src="arrowLeft" alt="fleche de direction slider">
-            <img @click="slide = slide + 40, counter ++" class="cursor-pointer" :src="arrowRight" alt="fleche de direction slider">
+            <img @click="slideLeft()" class="cursor-pointer" :src="arrowLeft" alt="fleche de direction slider">
+            <img @click="slideRight()" class="cursor-pointer" :src="arrowRight" alt="fleche de direction slider">
         </div>
-        <p>{{ counter }}</p>
+
+        <p>Counter : {{ counter }}</p>
+        <p>CardWidth : {{ cardWidth }}</p>
+
     </div>
 </template>
 
@@ -54,34 +75,42 @@ export default {
             quoteLogo: quoteLogo,
             clientLogo1 : clientLogo1,
             clientLogo2 : clientLogo2,
+
             counter: 0,
-            slide: 0,
+            cardWidth: 0,
         }
     },
-    computed: {
-        slideRight() {
-            if (this.counter >= 3) {
-                this.slide = 0;
+    methods:{
+        slideRight: function () {        
+            this.counter ++
+            if (this.counter >= 5) {
                 this.counter = 0;
-                return {
-                    transform : `translateX(-${this.slide}vw)`,
-                    transition: "transform .5s ease-in-out",
-                };
-            } else if (this.counter <= 0) {
-                this.slide = 80;
-                this.counter = 3;
-                return {
-                    transform : `translateX(-${this.slide}vw)`,
-                    transition: "transform .5s ease-in-out",
-                };
+                this.cardWidth = 0;
             } else {
-                return {
-                    transform : `translateX(-${this.slide}vw)`,
-                    transition: "transform .5s ease-in-out",
-                };
+                this.cardWidth = this.$refs.sliderCard.offsetWidth;
+                this.cardWidth = (this.cardWidth + 40) * this.counter;
             }
         },
-    }
+        slideLeft: function () {        
+            this.counter --
+            if (this.counter <= -1) {
+                this.counter = 5;
+                this.cardWidth = this.$refs.sliderCard.offsetWidth;
+                this.cardWidth = ((this.cardWidth + 40) * this.counter) - (this.cardWidth + 40);
+            } else {
+                this.cardWidth = this.$refs.sliderCard.offsetWidth;
+                this.cardWidth = (this.cardWidth + 40) * this.counter;
+            }
+        },
+    },
+    computed: {
+        slider() {
+            return {
+                transform : `translateX(-${this.cardWidth}px)`,
+                transition: "transform .5s ease-in-out",
+            };
+        },
+    },
 };
 
 </script>
