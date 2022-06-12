@@ -53,10 +53,6 @@
             <img @click="slideLeft()" class="cursor-pointer" :src="arrowLeft" alt="fleche de direction slider">
             <img @click="slideRight()" class="cursor-pointer" :src="arrowRight" alt="fleche de direction slider">
         </div>
-
-        <p>Counter : {{ counter }}</p>
-        <p>CardWidth : {{ cardWidth }}</p>
-
     </div>
 </template>
 

@@ -51,7 +51,8 @@
     .header {
         max-width: 1920px;
         z-index: 99999999;
-        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
         -webkit-backdrop-filter: blur(15px);
         backdrop-filter: blur(15px);
     }

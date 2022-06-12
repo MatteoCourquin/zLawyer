@@ -1,17 +1,17 @@
 <template>
     <div>
-        <!-- <Header class="fixed"/>
+        <Header class="fixed"/>
         <Hero/>
         <Reviews/>
         <Advantages/>
         <Adaptive/>
         <Features/>
-        <Clients/> -->
+        <Clients/>
         <Testimonials/>
-        <!-- <Infos/>
+        <Infos/>
         <Pricing/>
         <Footer/>
-        <Elements/> -->
+        <Elements/>
     </div>
 </template>
 
