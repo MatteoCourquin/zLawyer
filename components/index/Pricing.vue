@@ -52,7 +52,7 @@
 
 
 <script>
-import checkIcon from "../assets/images/logos/checkIcon.svg";
+import checkIcon from "../../assets/images/logos/checkIcon.svg";
 
 export default {
     data: function () {

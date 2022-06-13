@@ -2,7 +2,7 @@
     <div class="header-container">
         <div class="header mx-auto h-32 flex items-center justify-between px-8 py-6 w-full">
             
-            <NuxtLink to="/"><img :src="zeleLogo" class="h-14 sm:h-20 cursor-pointer"/></NuxtLink>
+            <NuxtLink to="/"><img :src="logoZele01" class="h-14 sm:h-20 cursor-pointer"/></NuxtLink>
 
             <ul class="items-center hidden xl:flex header-nav">
                 <li class="ml-10"><a class="text-link" href="#solutions">Solutions</a></li>
@@ -34,13 +34,17 @@
 
 <script>
 
-    import zeleLogo from "../assets/images/logos/zeleLogo.svg";
+    import zeleLogo from "../../assets/images/logos/zeleLogo.svg";
+    import logoZele01 from "../../assets/images/logos/logoZele-01.png";
+    import logoZele02 from "../../assets/images/logos/logoZele-02.png";
 
     export default {
         data() {
             return {
                 isActive: false,
                 zeleLogo: zeleLogo,
+                logoZele01: logoZele01,
+                logoZele02: logoZele02,
             }
         },
     }

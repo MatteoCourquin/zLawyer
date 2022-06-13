@@ -36,9 +36,9 @@
             <div class="card-testimonial">
                 <img class="quote" :src="quoteLogo" alt="checkIcon">
                 <img class="logo-client" :src="clientLogo2" alt="logo des clients">
-                <p>Après avoir fait une analyse des logiciels disponibles pour les cabinets d’avocats, nous avons choisi zLawyer car c’est celui qui nous a paru le plus complet et le plus intuitif d’utilisation.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In ex itaque cupiditate labore expedita. Debitis maiores eveniet voluptates voluptatibus magni!</p>
                 <br>
-                <p>Après quelques mois d’utilisation, on peut dire que zLawyer à l’épreuve du terrain répond complètement à notre attente.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum laudantium quasi, rerum laboriosam esse aliquid in architecto voluptate ad blanditiis!</p>
             </div>
 
             <!-- Card Testimonials Client 5 -->
@@ -52,19 +52,18 @@
         </div>
 
         <div class="flex justify-center gap-20 mt-10">
-            <img @click="slideLeft()" class="cursor-pointer" :src="arrowLeft" alt="fleche de direction slider">
-            <img @click="slideRight()" class="cursor-pointer" :src="arrowRight" alt="fleche de direction slider">
+            <img @click="slideLeft(), stopSlider()" class="cursor-pointer" :src="arrowLeft" alt="fleche de direction slider">
+            <img @click="slideRight(), stopSlider()" class="cursor-pointer" :src="arrowRight" alt="fleche de direction slider">
         </div>
-
     </div>
 </template>
 
 <script>
-import quoteLogo from "../assets/images/logos/quoteLogo.svg";
-import arrowRight from "../assets/images/logos/arrowRightIcon.svg";
-import arrowLeft from "../assets/images/logos/arrowLeftIcon.svg";
-import clientLogo1 from "../assets/images/testimonials/clientLogo1.svg";
-import clientLogo2 from "../assets/images/testimonials/clientLogo2.svg";
+import quoteLogo from "../../assets/images/logos/quoteLogo.svg";
+import arrowRight from "../../assets/images/logos/arrowRightIcon.svg";
+import arrowLeft from "../../assets/images/logos/arrowLeftIcon.svg";
+import clientLogo1 from "../../assets/images/testimonials/clientLogo1.svg";
+import clientLogo2 from "../../assets/images/testimonials/clientLogo2.svg";
 
 export default {
     data: function () {
@@ -94,7 +93,7 @@ export default {
             }
         },
         // Function to slide Left
-        slideLeft: function () {        
+        slideLeft: function () {
             this.counter --
             if (this.counter <= -1) {
                 this.counter = this.$refs.sliderContainer.children.length;
@@ -105,6 +104,14 @@ export default {
                 this.cardWidth = (this.cardWidth + 40) * this.counter;
             }
         },
+        stopSlider: function () {
+            // clearInterval(startSlide);
+            console.log("slider OFF")
+        },
+    },
+    beforeMount () {
+        let startSlide = setInterval( () => { this.slideRight() }, 2000);
+        console.log("slider ON")
     },
     computed: {
         // Style to slide the card

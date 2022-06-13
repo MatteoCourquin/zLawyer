@@ -17,12 +17,12 @@
 </template>
 
 <script>
-import googleDrive from "../assets/images/adaptative/googleDriveLogo.png"
-import one from "../assets/images/adaptative/oneDriveLogo.png"
-import synology from "../assets/images/adaptative/synologyLogo.png"
-import dropbox from "../assets/images/adaptative/dropboxLogo.png"
-import tresorit from "../assets/images/adaptative/tresoritLogo.png"
-import pcloud from "../assets/images/adaptative/pcloudLogo.png"
+import googleDrive from "../../assets/images/adaptative/googleDriveLogo.png"
+import one from "../../assets/images/adaptative/oneDriveLogo.png"
+import synology from "../../assets/images/adaptative/synologyLogo.png"
+import dropbox from "../../assets/images/adaptative/dropboxLogo.png"
+import tresorit from "../../assets/images/adaptative/tresoritLogo.png"
+import pcloud from "../../assets/images/adaptative/pcloudLogo.png"
 
 export default {
     data: function () {

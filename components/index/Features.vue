@@ -116,9 +116,9 @@
 
 <script>
 
-import features1 from "../assets/images/features/features1.png";
-import badgeAppStore from "../assets/images/logos/badgeAppStore.svg";
-import badgePlayStore from "../assets/images/logos/badgePlayStore.svg";
+import features1 from "../../assets/images/features/features1.png";
+import badgeAppStore from "../../assets/images/logos/badgeAppStore.svg";
+import badgePlayStore from "../../assets/images/logos/badgePlayStore.svg";
 
 export default {
     data: function () {

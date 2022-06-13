@@ -57,7 +57,7 @@
 </template>
 
 <script>
-import infoIcon from '../assets/images/logos/infoIcon.svg';
+import infoIcon from '../../assets/images/logos/infoIcon.svg';
 
 export default {
     data() {

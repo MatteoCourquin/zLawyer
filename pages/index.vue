@@ -16,15 +16,16 @@
 </template>
 
 <script>
-import Hero from '../components/Hero.vue';
-import Reviews from '../components/Reviews.vue';
-import Advantages from '../components/Advantages.vue';
-import Adaptive from '../components/Adaptive.vue';
-import Features from '../components/Features.vue';
-import Clients from '../components/Clients.vue';
-import Testimonials from '../components/Testimonials.vue';
-import Infos from '../components/Infos.vue';
-import Pricing from '../components/Pricing.vue';
-import Elements from '../components/Elements.vue';
-export default { components: { Hero, Reviews, Advantages, Adaptive, Features, Clients, Testimonials, Infos, Pricing, Elements } }
+import Header from '../components/index/Header.vue';
+import Hero from '../components/index/Hero.vue';
+import Reviews from '../components/index/Reviews.vue';
+import Advantages from '../components/index/Advantages.vue';
+import Adaptive from '../components/index/Adaptive.vue';
+import Features from '../components/index/Features.vue';
+import Clients from '../components/index/Clients.vue';
+import Testimonials from '../components/index/Testimonials.vue';
+import Infos from '../components/index/Infos.vue';
+import Pricing from '../components/index/Pricing.vue';
+import Elements from '../components/index/Elements.vue';
+export default { components: { Header, Hero, Reviews, Advantages, Adaptive, Features, Clients, Testimonials, Infos, Pricing, Elements } }
 </script>

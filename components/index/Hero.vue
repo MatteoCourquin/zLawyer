@@ -7,7 +7,7 @@
         <div>
             <img class="w-full" :src="illustrationHero" alt="illustration du logiciel">
             <typewriter :replace="replace" :type-interval="20" :replace-interval="3000">
-                <p class="text-center text-xl hidden lg:block">La solution la mieux notée par vos confrères !</p>
+                <p class="text-center text-2xl hidden lg:block">La solution la mieux notée par vos confrères !</p>
             </typewriter>
         </div>
 
@@ -17,7 +17,7 @@
 
 <script>
 
-import illustrationHero from "../assets/images/hero/illustrationHero.png";
+import illustrationHero from "../../assets/images/hero/illustrationHero.png";
 import Typewriter from "typewriter-vue";
 
 export default {
@@ -28,7 +28,7 @@ export default {
         return {
             illustrationHero: illustrationHero,
             replace: [
-                { from: "La solution la mieux notée par vos confrères", to: "Elle gère son cabinet avec zLawyer, et ça se voit !" },
+                { from: "La solution la mieux notée par vos confrères", to: "Ils gèrent leurs cabinets avec zLawyer, et ça se voit !" },
             ],
         }
     },
