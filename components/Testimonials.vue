@@ -2,7 +2,9 @@
     <div class="max-width-blue-section">
         <h2 class="mb-20">Ce qu’ils pensent de nous</h2>
 
-        <div class="slider-testimonials flex  gap-10" :style="slider">
+        <!-- Slider Container  -->
+        <div class="slider-testimonials flex gap-10" ref="sliderContainer" :style="slider">
+
             <!-- Card Testimonials Client 1 -->
             <div class="card-testimonial" ref="sliderCard">
                 <img class="quote" :src="quoteLogo" alt="checkIcon">
@@ -53,6 +55,7 @@
             <img @click="slideLeft()" class="cursor-pointer" :src="arrowLeft" alt="fleche de direction slider">
             <img @click="slideRight()" class="cursor-pointer" :src="arrowRight" alt="fleche de direction slider">
         </div>
+
     </div>
 </template>
 
@@ -66,20 +69,23 @@ import clientLogo2 from "../assets/images/testimonials/clientLogo2.svg";
 export default {
     data: function () {
         return {
+            // Images
             arrowLeft: arrowLeft,
             arrowRight: arrowRight,
             quoteLogo: quoteLogo,
             clientLogo1 : clientLogo1,
             clientLogo2 : clientLogo2,
 
+            // Slider
             counter: 0,
             cardWidth: 0,
         }
     },
     methods:{
-        slideRight: function () {        
+        // Function to slide Right
+        slideRight: function () {
             this.counter ++
-            if (this.counter >= 5) {
+            if (this.counter >= this.$refs.sliderContainer.children.length) {
                 this.counter = 0;
                 this.cardWidth = 0;
             } else {
@@ -87,10 +93,11 @@ export default {
                 this.cardWidth = (this.cardWidth + 40) * this.counter;
             }
         },
+        // Function to slide Left
         slideLeft: function () {        
             this.counter --
             if (this.counter <= -1) {
-                this.counter = 5;
+                this.counter = this.$refs.sliderContainer.children.length;
                 this.cardWidth = this.$refs.sliderCard.offsetWidth;
                 this.cardWidth = ((this.cardWidth + 40) * this.counter) - (this.cardWidth + 40);
             } else {
@@ -100,6 +107,7 @@ export default {
         },
     },
     computed: {
+        // Style to slide the card
         slider() {
             return {
                 transform : `translateX(-${this.cardWidth}px)`,

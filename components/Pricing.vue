@@ -43,7 +43,7 @@
 
           </div>
 
-          <a href="#" class="button-orange mt-12 w-max">Je souhaite une démonstration</a>
+          <NuxtLink to="/contact" class="button-orange mt-12 w-max">Je souhaite une démonstration</NuxtLink>
 
         </div>
 
