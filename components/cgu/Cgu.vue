@@ -1,6 +1,6 @@
 <template>
     <div class="max-width-blue-section">
-        <h2 class="text-center mb-20">Conditions générales d'utilisation du site zLawyer</h2>
+        <h2 class="text-center mb-20 mt-36">Conditions générales d'utilisation du site zLawyer</h2>
 
         <h3>1. L'utilisation de cookies</h3>
         <p>Notre site internet zLawyer utilise des cookies. Un cookie est un petit fichier qui est envoyé avec les pages de ce site Web et/ou les applications Flash et qui est stocké par votre navigateur sur votre disque dur à partir de votre ordinateur, téléphone portable, montre connectée ou tablette. Les informations qui y sont stockées peuvent être retournées à nos serveurs lors d'une visite ultérieure.</p>

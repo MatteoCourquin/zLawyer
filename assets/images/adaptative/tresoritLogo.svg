@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="74.3284377%" x2="0%" y2="26.3424128%" id="linearGradient-1">
+            <stop stop-color="#2B6DF1" offset="0%"></stop>
+            <stop stop-color="#00C4D5" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="logo" fill-rule="nonzero">
+            <path d="M19.3447378,15.208082 L14.5,12.4515932 L3,18.9946967 L3,24.5974526 L19.3447378,15.208082 Z M22.3705378,16.9296579 L3,28.0572244 L3,32.0053033 L14.5,38.5484068 L26,32.0053033 L26,18.9946967 L22.3705378,16.9296579 Z M14.5,9 L29,17.25 L29,33.75 L14.5,42 L3.33943274e-14,33.75 L0,17.25 L14.5,9 Z" id="Polygon-3-Copy" fill="url(#linearGradient-1)"></path>
+        </g>
+    </g>
+</svg>

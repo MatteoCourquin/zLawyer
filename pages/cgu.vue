@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Header/>
+        <Header class="fixed"/>
         <CGU/>
     </div>
 </template>

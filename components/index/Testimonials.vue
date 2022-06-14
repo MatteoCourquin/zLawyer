@@ -5,55 +5,43 @@
         <!-- Slider Container  -->
         <div class="slider-testimonials flex gap-10" ref="sliderContainer" :style="slider">
 
-            <!-- Card Testimonials Client 1 -->
+            <!-- Card Testimonials Client 1 (Kiejman) -->
             <div class="card-testimonial" ref="sliderCard">
                 <img class="quote" :src="quoteLogo" alt="checkIcon">
-                <img class="logo-client" :src="clientLogo2" alt="logo des clients">
+                <img class="logo-client" :src="clientLogo1" alt="logo des clients">
                 <p>Après avoir fait une analyse des logiciels disponibles pour les cabinets d’avocats, nous avons choisi zLawyer car c’est celui qui nous a paru le plus complet et le plus intuitif d’utilisation.</p>
                 <br>
                 <p>Après quelques mois d’utilisation, on peut dire que zLawyer à l’épreuve du terrain répond complètement à notre attente.</p>
             </div>
 
-            <!-- Card Testimonials Client 2 -->
+            <!-- Card Testimonials Client 2 (Richelieu) -->
             <div class="card-testimonial">
                 <img class="quote" :src="quoteLogo" alt="checkIcon">
                 <img class="logo-client" :src="clientLogo2" alt="logo des clients">
-                <p>Après avoir fait une analyse des logiciels disponibles pour les cabinets d’avocats, nous avons choisi zLawyer car c’est celui qui nous a paru le plus complet et le plus intuitif d’utilisation.</p>
-                <br>
-                <p>Après quelques mois d’utilisation, on peut dire que zLawyer à l’épreuve du terrain répond complètement à notre attente.</p>
+                <p>Le logiciel zLawyer ? en un mot ? ...la FACILITE !" C'est une solution très agréable et très simple. Il nous est devenu indispensable et il ne tombe jamais en panne.</p>
             </div>
 
             <!-- Card Testimonials Client 3 -->
             <div class="card-testimonial">
                 <img class="quote" :src="quoteLogo" alt="checkIcon">
-                <img class="logo-client" :src="clientLogo2" alt="logo des clients">
-                <p>Après avoir fait une analyse des logiciels disponibles pour les cabinets d’avocats, nous avons choisi zLawyer car c’est celui qui nous a paru le plus complet et le plus intuitif d’utilisation.</p>
+                <img class="logo-client" :src="clientLogo3" alt="logo des clients">
+                <p>C’est sans conteste le meilleur logiciel de facturation et de gestion et le plus easy-using avec une équipe hyper professionnelle et hyper réactive.</p>
                 <br>
-                <p>Après quelques mois d’utilisation, on peut dire que zLawyer à l’épreuve du terrain répond complètement à notre attente.</p>
+                <p>Nous utilisons ZL depuis 7 ans et nous n’avons jamais rencontré aucun problème.</p>
             </div>
 
-            <!-- Card Testimonials Client 4 -->
+            <!-- Card Testimonials Client 3 -->
             <div class="card-testimonial">
                 <img class="quote" :src="quoteLogo" alt="checkIcon">
-                <img class="logo-client" :src="clientLogo2" alt="logo des clients">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In ex itaque cupiditate labore expedita. Debitis maiores eveniet voluptates voluptatibus magni!</p>
-                <br>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum laudantium quasi, rerum laboriosam esse aliquid in architecto voluptate ad blanditiis!</p>
+                <img class="logo-client" :src="clientLogo4" alt="logo des clients">
+                <p>Cela va bientôt faire 10 ans que nous utilisons Z. Un logiciel ergonomique, convivial et d’une simplicité de déploiement et d’utilisation appréciée par l’ensemble de notre équipe. A recommander les yeux fermés.</p>
             </div>
 
-            <!-- Card Testimonials Client 5 -->
-            <div class="card-testimonial">
-                <img class="quote" :src="quoteLogo" alt="checkIcon">
-                <img class="logo-client" :src="clientLogo2" alt="logo des clients">
-                <p>Après avoir fait une analyse des logiciels disponibles pour les cabinets d’avocats, nous avons choisi zLawyer car c’est celui qui nous a paru le plus complet et le plus intuitif d’utilisation.</p>
-                <br>
-                <p>Après quelques mois d’utilisation, on peut dire que zLawyer à l’épreuve du terrain répond complètement à notre attente.</p>
-            </div>
         </div>
 
         <div class="flex justify-center gap-20 mt-10">
-            <img @click="slideLeft(), stopSlider()" class="cursor-pointer" :src="arrowLeft" alt="fleche de direction slider">
-            <img @click="slideRight(), stopSlider()" class="cursor-pointer" :src="arrowRight" alt="fleche de direction slider">
+            <img @click="slideLeft()" class="cursor-pointer" :src="arrowLeft" alt="fleche de direction slider">
+            <img @click="slideRight()" class="cursor-pointer" :src="arrowRight" alt="fleche de direction slider">
         </div>
     </div>
 </template>
@@ -62,8 +50,10 @@
 import quoteLogo from "../../assets/images/logos/quoteLogo.svg";
 import arrowRight from "../../assets/images/logos/arrowRightIcon.svg";
 import arrowLeft from "../../assets/images/logos/arrowLeftIcon.svg";
-import clientLogo1 from "../../assets/images/testimonials/clientLogo1.svg";
-import clientLogo2 from "../../assets/images/testimonials/clientLogo2.svg";
+import clientLogo1 from "../../assets/images/testimonials/kiejman.png";
+import clientLogo2 from "../../assets/images/testimonials/richelieu.png";
+import clientLogo3 from "../../assets/images/testimonials/sekriValentinZerrouk.png";
+import clientLogo4 from "../../assets/images/testimonials/mggVoltaire.png";
 
 export default {
     data: function () {
@@ -74,6 +64,8 @@ export default {
             quoteLogo: quoteLogo,
             clientLogo1 : clientLogo1,
             clientLogo2 : clientLogo2,
+            clientLogo3 : clientLogo3,
+            clientLogo4 : clientLogo4,
 
             // Slider
             counter: 0,
@@ -104,15 +96,15 @@ export default {
                 this.cardWidth = (this.cardWidth + 40) * this.counter;
             }
         },
-        stopSlider: function () {
-            // clearInterval(startSlide);
-            console.log("slider OFF")
-        },
+        // stopSlider: function () {
+        //     // clearInterval(startSlide);
+        //     console.log("slider OFF")
+        // },
     },
-    beforeMount () {
-        let startSlide = setInterval( () => { this.slideRight() }, 2000);
-        console.log("slider ON")
-    },
+    // beforeMount () {
+    //     let startSlide = setInterval( () => { this.slideRight() }, 2000);
+    //     console.log("slider ON")
+    // },
     computed: {
         // Style to slide the card
         slider() {
@@ -149,6 +141,7 @@ export default {
     }
     .card-testimonial .logo-client{
         margin-bottom: 40px;
+        height: 50px;
     }
     .card-testimonial .quote{
         position: absolute;
