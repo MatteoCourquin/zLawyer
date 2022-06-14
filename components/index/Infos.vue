@@ -11,7 +11,7 @@
         <div class="sm:w-5/6 flex flex-col justify-start">
           <div class="flex items-start justify-start max-h-14">
             <img :src="infoIcon" alt="iconInfo" />
-            <h4 class="ml-4">Y-a-t-il un engagement ?</h4>
+            <h4 class="ml-4">Y a t-il un engagement ?</h4>
           </div>
 
           <p class="mt-5">
@@ -58,7 +58,7 @@
         <div class="sm:w-5/6 mt-4 flex flex-col justify-start">
           <div class="flex items-start justify-start max-h-14">
             <img :src="infoIcon" alt="iconInfo" />
-            <h4 class="ml-4">Y-a-t-il des frais cachés ?</h4>
+            <h4 class="ml-4">Y a t-il des frais cachés ?</h4>
           </div>
 
           <p class="mt-5">
@@ -78,7 +78,7 @@ import infoIcon from "../../assets/images/logos/infoIcon.svg";
 export default {
   data() {
     return {
-      infoIcon: infoIcon,
+      infoIcon,
     };
   },
 };

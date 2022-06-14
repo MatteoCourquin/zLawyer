@@ -5,7 +5,7 @@
         <!-- Slider Container  -->
         <div class="slider-testimonials flex gap-10" ref="sliderContainer" :style="slider">
 
-            <!-- Card Testimonials Client 1 (Kiejman) -->
+            <!-- Card Testimonials Client 1 -->
             <div class="card-testimonial" ref="sliderCard">
                 <img class="quote" :src="quoteLogo" alt="checkIcon">
                 <img class="logo-client" :src="clientLogo1" alt="logo des clients">
@@ -14,7 +14,7 @@
                 <p>Après quelques mois d’utilisation, on peut dire que zLawyer à l’épreuve du terrain répond complètement à notre attente.</p>
             </div>
 
-            <!-- Card Testimonials Client 2 (Richelieu) -->
+            <!-- Card Testimonials Client 2 -->
             <div class="card-testimonial">
                 <img class="quote" :src="quoteLogo" alt="checkIcon">
                 <img class="logo-client" :src="clientLogo2" alt="logo des clients">
@@ -30,11 +30,20 @@
                 <p>Nous utilisons ZL depuis 7 ans et nous n’avons jamais rencontré aucun problème.</p>
             </div>
 
-            <!-- Card Testimonials Client 3 -->
+            <!-- Card Testimonials Client 4 -->
             <div class="card-testimonial">
                 <img class="quote" :src="quoteLogo" alt="checkIcon">
                 <img class="logo-client" :src="clientLogo4" alt="logo des clients">
                 <p>Cela va bientôt faire 10 ans que nous utilisons Z. Un logiciel ergonomique, convivial et d’une simplicité de déploiement et d’utilisation appréciée par l’ensemble de notre équipe. A recommander les yeux fermés.</p>
+            </div>
+
+            <!-- Card Testimonials Client 5 -->
+            <div class="card-testimonial">
+                <img class="quote" :src="quoteLogo" alt="checkIcon">
+                <img class="logo-client" :src="clientLogo5" alt="logo des clients">
+                <p>J’utilise zLawyer depuis des années. Cet outil me permet de facturer en deux clics et d’obtenir une analyse détaillée de la rentabilité de mes dossiers.</p>
+                <br>
+                <p>En plus de cela, l’équipe dédiée au super est vraiment très réactive. Je recommande à 200% !</p>
             </div>
 
         </div>
@@ -43,6 +52,8 @@
             <img @click="slideLeft()" class="cursor-pointer" :src="arrowLeft" alt="fleche de direction slider">
             <img @click="slideRight()" class="cursor-pointer" :src="arrowRight" alt="fleche de direction slider">
         </div>
+
+        <!-- <p>{{ slideDuration }}</p> -->
     </div>
 </template>
 
@@ -54,22 +65,26 @@ import clientLogo1 from "../../assets/images/testimonials/kiejman.png";
 import clientLogo2 from "../../assets/images/testimonials/richelieu.png";
 import clientLogo3 from "../../assets/images/testimonials/sekriValentinZerrouk.png";
 import clientLogo4 from "../../assets/images/testimonials/mggVoltaire.png";
+import clientLogo5 from "../../assets/images/testimonials/adHoc.png";
 
 export default {
     data: function () {
         return {
             // Images
-            arrowLeft: arrowLeft,
-            arrowRight: arrowRight,
-            quoteLogo: quoteLogo,
-            clientLogo1 : clientLogo1,
-            clientLogo2 : clientLogo2,
-            clientLogo3 : clientLogo3,
-            clientLogo4 : clientLogo4,
+            arrowLeft,
+            arrowRight,
+            quoteLogo,
+            clientLogo1,
+            clientLogo2,
+            clientLogo3,
+            clientLogo4,
+            clientLogo5,
 
             // Slider
             counter: 0,
             cardWidth: 0,
+            // slideDuration: 2000,
+            // setInterval: setInterval( () => { this.slideRight() }, this.slideDuration),
         }
     },
     methods:{
@@ -96,13 +111,23 @@ export default {
                 this.cardWidth = (this.cardWidth + 40) * this.counter;
             }
         },
-        // stopSlider: function () {
-        //     // clearInterval(startSlide);
-        //     console.log("slider OFF")
+        // startSlider: function(setInterval){
+        //     setInterval = setInterval( () => { this.slideRight() }, this.slideDuration);
+        //     // setInterval( () => { this.slideRight() }, this.slideDuration)
+        //     console.log("Slider ON");
         // },
+        // stopSlider: function(){
+        //     this.slideDuration = 10000
+        //     setInterval( () => { this.slideRight() }, this.slideDuration);
+        //     console.log("Slider OFF");
+        //     // setTimeout(() => {
+        //     //     this.slideDuration = 500
+        //     //     this.startSlider()
+        //     // }, 20000);
+        // }
     },
-    // beforeMount () {
-    //     let startSlide = setInterval( () => { this.slideRight() }, 2000);
+    // mounted() {
+    //     this.startSlider(this.setInterval);
     //     console.log("slider ON")
     // },
     computed: {

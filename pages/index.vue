@@ -2,7 +2,7 @@
     <div>
         <Header class="fixed"/>
         <Hero/>
-        <Reviews/>
+        <!-- <Reviews/> -->
         <Advantages/>
         <Adaptive/>
         <Features/>
@@ -11,7 +11,7 @@
         <Infos/>
         <Pricing/>
         <Footer/>
-        <Elements/>
+        <!-- <Elements/> -->
     </div>
 </template>
 

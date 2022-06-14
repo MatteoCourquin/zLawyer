@@ -57,7 +57,7 @@ import checkIcon from "../../assets/images/logos/checkIcon.svg";
 export default {
     data: function () {
         return {
-            checkIcon: checkIcon
+            checkIcon
         }
     },
 }
