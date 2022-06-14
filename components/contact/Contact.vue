@@ -49,7 +49,7 @@
             <div class="p-10">
                 <h2 class="p-2">Contact</h2>
                 <form action='' method='' class="contact-card-form">
-                 
+
                     <div class="flex flex-col p-2">
                         <label for='cabinetName'>Nom Du Cabinet :</label>
                         <input type='text' id='cabinetName' name='cabinetName' />
@@ -80,7 +80,7 @@
 
                         <div class="flex flex-col p-2">
                             <label for='mail'>Mail</label>
-                            <input type='e-mail' id='mail' name='mail' />
+                            <input type='email' id='mail' name='mail' />
                         </div>
                     </div>
 
@@ -128,12 +128,15 @@
             box-shadow: none;
         }
     }
-    .card-contact input, textarea{
+    .card-contact input, .card-contact textarea{
         border: 1px solid var(--color-blue);
         border-radius: 5px;
         padding: 5px 10px;
         resize: none;
         outline: none;
+    }
+    .card-contact input:hover, .card-contact textarea:hover{
+        border: 1px solid var(--color-orange);
     }
     .card-contact label{
         font-family: 'Roboto-Medium';

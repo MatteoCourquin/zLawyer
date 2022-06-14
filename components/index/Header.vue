@@ -5,9 +5,9 @@
             <NuxtLink to="/"><img :src="zeleLogo" class="h-12 sm:h-16 cursor-pointer"/></NuxtLink>
 
             <ul class="items-center hidden xl:flex header-nav">
-                <li class="ml-10"><a class="text-link" href="#solutions">Solutions</a></li>
-                <li class="ml-10"><a class="text-link" href="#fonctionnalites">Fonctionnalités</a></li>
-                <li class="ml-10"><a class="text-link" href="#clients">Nos Clients</a></li>
+                <li class="ml-10"><a class="text-link" href="/#solutions">Solutions</a></li>
+                <li class="ml-10"><a class="text-link" href="/#fonctionnalites">Fonctionnalités</a></li>
+                <li class="ml-10"><a class="text-link" href="/#clients">Nos Clients</a></li>
                 <li class="ml-10"><a class="text-link" href="https://client.zlawyer.fr/sign-in" target="_blank">Accès Client</a></li>
                 <li class="ml-10"><NuxtLink class="text-link" to="/contact"><button class="button-orange">Contact</button></NuxtLink></li>
             </ul>
@@ -42,9 +42,9 @@
         data() {
             return {
                 isActive: false,
-                zeleLogo: zeleLogo,
-                zeleLogo1: zeleLogo1,
-                zeleLogo2: zeleLogo2,
+                zeleLogo,
+                zeleLogo1,
+                zeleLogo2,
             }
         },
     }

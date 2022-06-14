@@ -2,7 +2,7 @@
     <div>
         <Header/>
         <Contact/>
-        <Elements/>
+        <!-- <Elements/> -->
     </div>
 </template>
 

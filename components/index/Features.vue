@@ -123,10 +123,10 @@ import badgePlayStore from "../../assets/images/logos/badgePlayStore.svg";
 export default {
     data: function () {
         return {
-            badgeAppStore: badgeAppStore,
-            badgePlayStore: badgePlayStore,
+            badgeAppStore,
+            badgePlayStore,
 
-            features1: features1,
+            features1,
         }
     },
 }

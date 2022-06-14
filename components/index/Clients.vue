@@ -100,7 +100,7 @@ export default {
     }
   },
 
-  beforeMount() {
+  mounted() {
     this.wrapAnimationInfinite()
     this.wrapAnimationInfiniteBottom()
   },
