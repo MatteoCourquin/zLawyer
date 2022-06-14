@@ -5,18 +5,26 @@
 
       <div class="wrapperContainerTop">
         <div class="imagesContainer w-full flex items-center justify-between">
-          <img :src="aramsis" alt="Arasmis Logo" class="image w-auto" />
-          <img :src="archers" alt="Archers Logo" class="image w-auto" />
-          <img :src="lexcom" alt="Lexcom Logo" class="image w-auto" />
-          <img :src="rivedroit" alt="Rivedroit Logo" class="image w-auto" />
-          <img :src="rivedroit" alt="Rivedroit Logo" class="image w-auto" />
+          <img :src="azarmi" alt="Logo Arasmis" class="image w-auto h-28" />
+          <img :src="baro" alt="Logo Baro" class="image w-auto h-28" />
+          <img :src="betto" alt="Logo Betto" class="image w-auto h-28" />
+          <img
+            :src="bonifassi"
+            alt="Logo Bonifassi"
+            class="image w-auto h-28"
+          />
+          <img :src="flichy" alt="Logo Flichy" class="image w-auto h-28" />
         </div>
         <div class="imagesContainer w-full flex items-center justify-between">
-          <img :src="aramsis" alt="Arasmis Logo" class="image w-auto" />
-          <img :src="archers" alt="Archers Logo" class="image w-auto" />
-          <img :src="archers" alt="Archers Logo" class="image w-auto" />
-          <img :src="lexcom" alt="Lexcom Logo" class="image w-auto" />
-          <img :src="rivedroit" alt="Rivedroit Logo" class="image w-auto" />
+          <img :src="azarmi" alt="Logo Arasmis" class="image w-auto h-28" />
+          <img :src="baro" alt="Logo Baro" class="image w-auto h-28" />
+          <img :src="betto" alt="Logo Betto" class="image w-auto h-28" />
+          <img
+            :src="bonifassi"
+            alt="Logo Bonifassi"
+            class="image w-auto h-28"
+          />
+          <img :src="flichy" alt="Logo Flichy" class="image w-auto h-28" />
         </div>
       </div>
 
@@ -24,28 +32,32 @@
         <div
           class="imagesContainerBottom w-full flex items-center justify-between"
         >
-          <img :src="aramsis" alt="Arasmis Logo" class="imageBottom w-auto" />
-          <img :src="aramsis" alt="Arasmis Logo" class="imageBottom w-auto" />
-          <img :src="archers" alt="Archers Logo" class="imageBottom w-auto" />
-          <img :src="lexcom" alt="Lexcom Logo" class="imageBottom w-auto" />
           <img
-            :src="rivedroit"
-            alt="Rivedroit Logo"
-            class="imageBottom w-auto"
+            :src="bonilfassi"
+            alt="Logo Bonilfassi"
+            class="imageBottom w-auto h-28"
           />
+          <img
+            :src="lamartine"
+            alt="Logo Lamartine"
+            class="imageBottom w-auto h-28"
+          />
+          <img :src="lombard" alt="Logo Lombard" class="imageBottom w-auto h-28" />
+          <img
+            :src="navacelle"
+            alt="Logo Navacelle"
+            class="imageBottom w-auto h-28"
+          />
+          <img :src="ollyns" alt="Logo Ollyns" class="imageBottom w-auto h-24" />
         </div>
         <div
           class="imagesContainerBottom w-full flex items-center justify-between"
         >
-          <img :src="aramsis" alt="Arasmis Logo" class="imageBottom w-auto" />
-          <img :src="archers" alt="Archers Logo" class="imageBottom w-auto" />
-          <img :src="lexcom" alt="Lexcom Logo" class="imageBottom w-auto" />
-          <img :src="lexcom" alt="Lexcom Logo" class="imageBottom w-auto" />
-          <img
-            :src="rivedroit"
-            alt="Rivedroit Logo"
-            class="imageBottom w-auto"
-          />
+          <img :src="valther" alt="Logo Valther" class="imageBottom w-auto h-28" />
+          <img :src="lombard" alt="Logo Lombard" class="imageBottom w-auto h-28" />
+          <img :src="flichy" alt="Logo Flichy" class="image w-auto h-28" />
+          <img :src="vatier" alt="Logo Vatier" class="imageBottom w-auto h-28" />
+          <img :src="azarmi" alt="Logo Azarmi" class="imageBottom w-auto h-28" />
         </div>
       </div>
     </div>
@@ -53,20 +65,39 @@
 </template>
 
 <script>
-import aramsis from "../../assets/images/clients/aramisLogo.png";
-import archers from "../../assets/images/clients/archersLogo.png";
-import lexcom from "../../assets/images/clients/lexcomLogo.png";
-import rivedroit from "../../assets/images/clients/rivedroitLogo.png";
+import azarmi from "../../assets/images/clients/azarmiLogo.webp";
+import baro from "../../assets/images/clients/baroLogo.webp";
+import betto from "../../assets/images/clients/bettoLogo.webp";
+import bonifassi from "../../assets/images/clients/bonifassiLogo.webp";
+import flichy from "../../assets/images/clients/flichyLogo.webp";
+import bonilfassi from "../../assets/images/clients/bonifassiLogo.webp";
+import lamartine from "../../assets/images/clients/laMartineLogo.webp";
+import lombard from "../../assets/images/clients/lombardLogo.webp";
+import navacelle from "../../assets/images/clients/navacelleLogo.webp";
+import ollyns from "../../assets/images/clients/ollynsLogo.webp";
+import valther from "../../assets/images/clients/valtherLogo.webp";
+import vatier from "../../assets/images/clients/vatierLogo.webp";
+import vinci from "../../assets/images/clients/vinciLogo.webp";
+
 import { gsap } from "gsap";
 
 export default {
   data: function () {
     return {
-      aramsis,
-      archers,
-      lexcom,
-      rivedroit,
-    };
+      azarmi,
+      baro,
+      betto,
+      bonifassi,
+      flichy,
+      bonilfassi,
+      lamartine,
+      lombard,
+      navacelle,
+      ollyns,
+      valther,
+      vatier,
+      vinci,
+    }
   },
 
   beforeMount() {
@@ -76,15 +107,10 @@ export default {
 
   methods: {
     wrapAnimationInfinite() {
-
-      if(window.matchMedia("(max-width: 1200px)").matches) {
-
-        gsap.set(".wrapperContainerBottom", { xPercent: -200 })
-
+      if (window.matchMedia("(max-width: 1200px)").matches) {
+        gsap.set(".wrapperContainerTop", { xPercent: -200 })
       } else {
-
         gsap.set(".wrapperContainerTop", { xPercent: -50 })
-
       }
 
       let imagesWidth = 300
@@ -96,9 +122,9 @@ export default {
 
       gsap.set(test2, {
         x: function (i) {
-          return i * imagesWidth
+          return i * imagesWidth;
         },
-      })
+      });
 
       var action = gsap.timeline().to(test2, {
         x: dirFromRight,
@@ -112,34 +138,26 @@ export default {
     },
 
     wrapAnimationInfiniteBottom() {
-
-      if(window.matchMedia("(max-width: 1200px)").matches) {
-
+      if (window.matchMedia("(max-width: 1200px)").matches) {
         gsap.set(".wrapperContainerBottom", { xPercent: -200 })
-
       } else {
-
         gsap.set(".wrapperContainerBottom", { xPercent: -50 })
-
       }
 
-      // const imagesContainer = document.querySelector(".imagesContainerBottom")
-      const images = document.querySelectorAll(".imageBottom")
-
-      let imagesWidth = 350
-      var totalWidth = imagesWidth * 10
+      let imagesWidth = 300
+      var totalWidth = imagesWidth * 9
       var test2 = document.querySelectorAll(
         ".wrapperContainerBottom .imageBottom"
-      );
+      )
       var dirFromLeft = "+=" + totalWidth
 
-      var mod = gsap.utils.wrap(0, totalWidth);
+      var mod = gsap.utils.wrap(0, totalWidth)
 
       gsap.set(test2, {
         x: function (i) {
           return i * imagesWidth;
         },
-      });
+      })
 
       var action = gsap.timeline().to(test2, {
         x: dirFromLeft,
@@ -151,23 +169,20 @@ export default {
         repeat: -1,
       })
     },
-
-    resizeFunction() {
-      this.wrapAnimationInfinite()
-      this.wrapAnimationInfiniteBottom()
-    },
   },
 }
 </script>
 
 <style scoped>
-.imageBottom,
-.image {
+.imageBottom, .image {
   position: absolute;
-  margin: 0 400px;
 }
 
+.wrapperContainerTop {
+  padding-top: 40px;
+}
 .wrapperContainerBottom {
-  padding-top: 100px;
+  padding-top: 150px;
+  margin-bottom: 65px;
 }
 </style>
