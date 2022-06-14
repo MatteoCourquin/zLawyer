@@ -1,12 +1,14 @@
 <template>
     <div>
         <Header/>
-        <ContactCard/>
+        <Contact/>
+        <Elements/>
     </div>
 </template>
 
 <script>
 import Header from '../components/index/Header.vue';
-import ContactCard from '../components/contact/ContactCard.vue';
-export default { components: { Header, ContactCard } }
+import Contact from '../components/contact/Contact.vue';
+import Elements from '../components/index/Elements.vue';
+export default { components: { Header, Contact, Elements } }
 </script>

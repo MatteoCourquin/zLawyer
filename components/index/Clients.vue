@@ -69,7 +69,7 @@ export default {
     };
   },
 
-  mounted() {
+  beforeMount() {
     this.wrapAnimationInfinite()
     this.wrapAnimationInfiniteBottom()
   },
@@ -164,7 +164,7 @@ export default {
 .imageBottom,
 .image {
   position: absolute;
-  margin: 0 300px;
+  margin: 0 400px;
 }
 
 .wrapperContainerBottom {

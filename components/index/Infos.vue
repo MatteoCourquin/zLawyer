@@ -42,13 +42,15 @@
         <div class="sm:w-5/6 mt-4 flex flex-col justify-start">
           <div class="flex items-start justify-start max-h-14">
             <img :src="infoIcon" alt="iconInfo" />
-            <h4 class="ml-4">Y-a-t-il des frais cachés ?</h4>
+            <h4 class="ml-4">Puis-je adapter mon abonnent ?</h4>
           </div>
 
           <p class="mt-5">
-            Une fois abonné, vous bénéficiez d’un accès au support utilisateur
-            et aux mises à jour
-            <span class="text-bolder">sans frais complémentaires</span>.
+            Oui sans problème. Si un collaborateur quitte le cabinet et qu’il
+            n’est pas remplacé, vous pourrez
+            <span class="text-bolder"
+              >adapter votre abonnement</span
+            > en conséquence.
           </p>
         </div>
 
@@ -56,15 +58,13 @@
         <div class="sm:w-5/6 mt-4 flex flex-col justify-start">
           <div class="flex items-start justify-start max-h-14">
             <img :src="infoIcon" alt="iconInfo" />
-            <h4 class="ml-4">Puis adapter mon abonnent ?</h4>
+            <h4 class="ml-4">Y-a-t-il des frais cachés ?</h4>
           </div>
 
           <p class="mt-5">
-            Oui sans problème. Si un collaborateur quitte le cabinet et qu’il
-            n’est pas remplacé, vous pourrez
-            <span class="text-bolder"
-              >adapter votre abonnement en conséquence</span
-            >.
+            Une fois abonné, vous bénéficiez d’un accès au support utilisateur
+            et aux mises à jour
+            <span class="text-bolder">sans frais complémentaires</span>.
           </p>
         </div>
       </div>

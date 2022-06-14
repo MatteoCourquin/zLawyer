@@ -60,6 +60,7 @@ a{
     overflow: hidden;
 }
 .max-width-white-section-content h2{
+    text-align: center;
     margin-bottom: 50px;
 }
 
@@ -100,6 +101,7 @@ h1{
 h2{
     font-family: 'Roboto-Bold';
     font-size: clamp(2rem, 3vw, 4rem);
+    line-height: clamp(2rem, 3.5vw, 4rem);
 }
 h3{
     font-family: 'Roboto-Medium';
@@ -151,7 +153,7 @@ p .text-bolder{
 /* *** Components *** */
 
 .button-orange, .button-transparent{
-    padding: 10px 20px;
+    padding: 10px 30px;
     border-radius: 999px;
     border: 3px solid var(--color-orange);
     cursor: pointer;
