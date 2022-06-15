@@ -8,7 +8,7 @@
 
 <script>
     import Header from '../components/Header.vue';
-    import Content from '../components/privacyPolicy/Content.vue';
+    import Content from '../components/cookiePolicy/Content.vue';
     import Footer from '../components/Footer.vue';
 
     export default { components: { Header, Content, Footer } }

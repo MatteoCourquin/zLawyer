@@ -33,7 +33,8 @@
 
                     <div>
                         <nuxt-link class="block text-link" to="/conditions-generales-utilisation">Conditions générales d'utilisation</nuxt-link>
-                        <nuxt-link class="block text-link" to="/politques-de-confidentialite">Politques de confidentialité</nuxt-link>
+                        <nuxt-link class="block text-link" to="/politques-de-confidentialite">Politiques de confidentialité</nuxt-link>
+                        <nuxt-link class="block text-link" to="/politique-de-cookies">Politiques de cookies</nuxt-link>
                     </div>
                 </div>
 

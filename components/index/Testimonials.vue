@@ -9,55 +9,83 @@
             <div class="card-testimonial" ref="sliderCard">
                 <img class="quote" :src="quoteLogo" alt="checkIcon">
                 <img class="logo-client" :src="clientLogo1" alt="logo des clients">
-                <p>Un logiciel de gestion est indispensable à tout avocat, autant choisir le meilleur !</p>
+                <div class="pl-2 border-l-2 border-blue">
+                    <p>Un logiciel de gestion est indispensable à tout avocat, autant choisir le meilleur !</p>
+                </div>
+                <p class="client-sign"><span class="text-bolder">Me Christophe Thevenet, avocat.</span><br>
+                Librato Avocats</p>
             </div>
 
             <!-- Card Testimonials Client -->
-            <div class="card-testimonial" ref="sliderCard">
+            <div class="card-testimonial">
                 <img class="quote" :src="quoteLogo" alt="checkIcon">
                 <img class="logo-client" :src="clientLogo2" alt="logo des clients">
-                <p>Après avoir fait une analyse des logiciels disponibles pour les cabinets d’avocats, nous avons choisi zLawyer car c’est celui qui nous a paru le plus complet et le plus intuitif d’utilisation.</p>
-                <br>
-                <p>Après quelques mois d’utilisation, on peut dire que zLawyer à l’épreuve du terrain répond complètement à notre attente.</p>
+                <div class="pl-2 border-l-2 border-blue">
+                    <p>Après avoir fait une analyse des logiciels disponibles pour les cabinets d’avocats, nous avons choisi zLawyer car c’est celui qui nous a paru le plus complet et le plus intuitif d’utilisation.</p>
+                    <br>
+                    <p>Après quelques mois d’utilisation, on peut dire que zLawyer à l’épreuve du terrain répond complètement à notre attente.</p>
+                </div>
+                <p class="client-sign"><span class="text-bolder">Me Thierry Marembert, avocat.</span><br>
+                Kiejman & Marembert Avocats</p>
             </div>
 
             <!-- Card Testimonials Client -->
             <div class="card-testimonial">
                 <img class="quote" :src="quoteLogo" alt="checkIcon">
                 <img class="logo-client" :src="clientLogo3" alt="logo des clients">
-                <p>Le logiciel zLawyer ? en un mot ? ...la FACILITE !" C'est une solution très agréable et très simple. Il nous est devenu indispensable et il ne tombe jamais en panne.</p>
+                <div class="pl-2 border-l-2 border-blue">
+                    <p>Le logiciel zLawyer ? en un mot ? ...la FACILITE !" C'est une solution très agréable et très simple. Il nous est devenu indispensable et il ne tombe jamais en panne.</p>
+                </div>
+                <p class="client-sign"><span class="text-bolder">Me Benoît Gruau, avocat.</span><br>
+                Richelieu Avocats</p>
             </div>
 
             <!-- Card Testimonials Client -->
             <div class="card-testimonial">
                 <img class="quote" :src="quoteLogo" alt="checkIcon">
                 <img class="logo-client" :src="clientLogo4" alt="logo des clients">
-                <p>C’est sans conteste le meilleur logiciel de facturation et de gestion et le plus easy-using avec une équipe hyper professionnelle et hyper réactive.</p>
-                <br>
-                <p>Nous utilisons ZL depuis 7 ans et nous n’avons jamais rencontré aucun problème.</p>
+                <div class="pl-2 border-l-2 border-blue">
+                    <p>C’est sans conteste le meilleur logiciel de facturation et de gestion et le plus easy-using avec une équipe hyper professionnelle et hyper réactive.</p>
+                    <br>
+                    <p>Nous utilisons ZL depuis 7 ans et nous n’avons jamais rencontré aucun problème.</p>
+                </div>
+                <p class="client-sign"><span class="text-bolder">Me Valérie Goffinon, avocat.</span><br>
+                Sekri Valentin Zerouk Avocats</p>
             </div>
 
             <!-- Card Testimonials Client -->
             <div class="card-testimonial">
                 <img class="quote" :src="quoteLogo" alt="checkIcon">
                 <img class="logo-client" :src="clientLogo5" alt="logo des clients">
-                <p>Cela va bientôt faire 10 ans que nous utilisons Z. Un logiciel ergonomique, convivial et d’une simplicité de déploiement et d’utilisation appréciée par l’ensemble de notre équipe. A recommander les yeux fermés.</p>
+                <div class="pl-2 border-l-2 border-blue">
+                    <p>Cela va bientôt faire 10 ans que nous utilisons Z. Un logiciel ergonomique, convivial et d’une simplicité de déploiement et d’utilisation appréciée par l’ensemble de notre équipe. A recommander les yeux fermés.</p>
+                </div>
+                <p class="client-sign"><span class="text-bolder">Me David Guillouet, avocat.</span><br>
+                Voltaire Avocats</p>
             </div>
 
             <!-- Card Testimonials Client -->
             <div class="card-testimonial">
                 <img class="quote" :src="quoteLogo" alt="checkIcon">
                 <img class="logo-client" :src="clientLogo6" alt="logo des clients">
-                <p>J’utilise zLawyer depuis des années. Cet outil me permet de facturer en deux clics et d’obtenir une analyse détaillée de la rentabilité de mes dossiers.</p>
-                <br>
-                <p>En plus de cela, l’équipe dédiée au super est vraiment très réactive. Je recommande à 200% !</p>
+                <div class="pl-2 border-l-2 border-blue">
+                    <p>J’utilise zLawyer depuis des années. Cet outil me permet de facturer en deux clics et d’obtenir une analyse détaillée de la rentabilité de mes dossiers.</p>
+                    <br>
+                    <p>En plus de cela, l’équipe dédiée au super est vraiment très réactive. Je recommande à 200% !</p>
+                </div>
+                <p class="client-sign"><span class="text-bolder">Me Thomas Cuq, avocat.</span><br>
+                Ad Hoc Avocats</p>
             </div>
 
             <!-- Card Testimonials Client -->
             <div class="card-testimonial">
                 <img class="quote" :src="quoteLogo" alt="checkIcon">
                 <img class="logo-client" :src="clientLogo7" alt="logo des clients">
-                <p>J’utilise zLawyer depuis plusieurs années. Il est devenu un outil de facturation incontournable au sein du cabinet. Le vrai plus, une équipe à l’écoute de ses clients et très réactive.</p>
+                <div class="pl-2 border-l-2 border-blue">
+                    <p>J’utilise zLawyer depuis plusieurs années. Il est devenu un outil de facturation incontournable au sein du cabinet. Le vrai plus, une équipe à l’écoute de ses clients et très réactive.</p>
+                </div>
+                <p class="client-sign"><span class="text-bolder">Me Nacime Tobni, avocat.</span><br>
+                Advance Avocats</p>
             </div>
 
         </div>
@@ -167,7 +195,7 @@ export default {
         width: 38vw;
         max-width: 700px;
         position: relative;
-        padding: 60px;
+        padding: 50px;
         border-radius: var(--radius-current);
         background-color: var(--color-white);
         box-shadow: var(--shadow-current);
@@ -175,7 +203,7 @@ export default {
     @media screen and (max-width : 1000px){
         .card-testimonial{
             width: 70%;
-            padding: 50px;
+            padding: 40px;
         }
     }
     @media screen and (max-width : 700px){
@@ -185,9 +213,14 @@ export default {
         }
     }
     .card-testimonial .logo-client{
+        margin-left: 20px;
         margin-bottom: 40px;
         height: 50px;
         border-radius: var(--radius-current);
+    }
+    .card-testimonial .client-sign{
+        margin-top: 50px;
+        float: right;
     }
     .card-testimonial .quote{
         position: absolute;
