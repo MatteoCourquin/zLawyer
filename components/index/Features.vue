@@ -1,7 +1,7 @@
 <template>
     <div class="max-width-blue-section" id="fonctionnalites">
         <h2>Fonctionnalités</h2>
-        <p class="subtitle md:w-2/3 xl:w-1/2">Lorem ipsum dolor sit amet <span class="text-bolder">consectetur adipisicing</span> elit. Eligendi cum culpa distinctio sunt <span class="text-bolder">numquam nemo</span> veritatis obcaecati, fuga rem placeat!</p>
+        <p class="subtitle md:w-2/3 xl:w-1/2">zLawyer a été conçu par des Avocats. Cela permet de garantir que les <span class="text-bolder">fonctionnalités et l’ergonomie</span> proposées sont adaptées aux cabinets de petites et grandes tailles.</p>
 
         <!-- Card Features Facturation -->
         <div class="md:px-8">

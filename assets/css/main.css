@@ -77,6 +77,9 @@ a{
 
 /* *** Typo *** */
 
+h1, h2, h3, h4, h5, h6, p, li, a, button, input, textarea, label, select, .subtitle{
+    font-family: sans-serif;
+}
 h1, h2, h3, h4, h5, h6 {
     color: var(--color-midnight-blue);
 }
