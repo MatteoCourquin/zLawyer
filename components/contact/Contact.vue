@@ -51,7 +51,7 @@
                 <form action='' method='' class="contact-card-form">
 
                     <div class="flex flex-col p-2">
-                        <label for='cabinetName'>Nom Du Cabinet :</label>
+                        <label for='cabinetName'>Nom Du Cabinet</label>
                         <input type='text' id='cabinetName' name='cabinetName' />
                     </div>
 
@@ -74,7 +74,7 @@
 
                     <div class="grid grid-cols-2">
                         <div class="flex flex-col p-2">
-                            <label for='phone'>Tel</label>
+                            <label for='phone'>Téléphone</label>
                             <input type='tel' id='phone' name='phone' />
                         </div>
 
