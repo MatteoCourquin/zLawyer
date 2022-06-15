@@ -148,7 +148,7 @@ p .text-bolder{
     border: 3px solid var(--color-orange);
     cursor: pointer;
     transition: var(--transition-medium);
-    font-family: 'Roboto-Medium';
+    font-family: 'Roboto-Medium', sans-serif;
     text-align: center;
 }
 
