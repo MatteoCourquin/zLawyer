@@ -149,6 +149,7 @@ p .text-bolder{
     cursor: pointer;
     transition: var(--transition-medium);
     font-family: 'Roboto-Medium';
+    text-align: center;
 }
 
 .button-transparent{
@@ -157,6 +158,7 @@ p .text-bolder{
 }
 .button-transparent a{
     color: var(--color-orange);
+    text-align: center;
 }
 .button-transparent:hover{
     background-color: var(--color-orange);
@@ -169,6 +171,7 @@ p .text-bolder{
 }
 .button-orange a{
     color: var(--color-white);
+    text-align: center;
 }
 .button-orange:hover{
     background-color: transparent;

@@ -1,6 +1,8 @@
 <template>
     <div class="max-width-blue-section">
-        <h2 class="text-center mb-20 mt-36">Conditions générales d'utilisation du site zLawyer</h2>
+        <h2 class="text-center mb-20 mt-36">Mentions légales et politique de confidentialité</h2>
+
+        <p>Mentions légales et politique de confidentialité. La société Zèle Solutions, soucieuse des droits des individus, notamment au regard des traitements automatisés et dans une volonté de transparence avec ses clients, a mis en place une politique reprenant l’ensemble de ces traitements, des finalités poursuivies par ces derniers ainsi que des moyens d’actions à la disposition des individus afin qu’ils puissent au mieux exercer leurs droits.  Pour toute information complémentaire sur la protection des données personnelles, nous vous invitons à consulter le site : <a href="https://www.cnil.fr//" target="_blank">https://www.cnil.fr//</a>. La poursuite de la navigation sur ce site vaut acceptation sans réserve des dispositions et conditions d'utilisation qui suivent.  La version actuellement en ligne de ces conditions d'utilisation est la seule opposable pendant toute la durée d'utilisation du site et jusqu'à ce qu'une nouvelle version la remplace.</p>
 
         <h3>1. L'utilisation de cookies</h3>
         <p>Notre site internet zLawyer utilise des cookies. Un cookie est un petit fichier qui est envoyé avec les pages de ce site Web et/ou les applications Flash et qui est stocké par votre navigateur sur votre disque dur à partir de votre ordinateur, téléphone portable, montre connectée ou tablette. Les informations qui y sont stockées peuvent être retournées à nos serveurs lors d'une visite ultérieure.</p>

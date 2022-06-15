@@ -26,6 +26,7 @@ import Clients from '../components/index/Clients.vue';
 import Testimonials from '../components/index/Testimonials.vue';
 import Infos from '../components/index/Infos.vue';
 import Pricing from '../components/index/Pricing.vue';
+import Footer from '../components/index/Footer.vue';
 import Elements from '../components/index/Elements.vue';
-export default { components: { Header, Hero, Reviews, Advantages, Adaptive, Features, Clients, Testimonials, Infos, Pricing, Elements } }
+export default { components: { Header, Hero, Reviews, Advantages, Adaptive, Features, Clients, Testimonials, Infos, Pricing, Footer, Elements } }
 </script>

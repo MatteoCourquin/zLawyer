@@ -17,7 +17,7 @@
                 <li class="ml-10"><a @click="isActive = !isActive" class="text-link" href="#fonctionnalites">Fonctionnalités</a></li>
                 <li class="ml-10"><a @click="isActive = !isActive" class="text-link" href="#clients">Nos Clients</a></li>
                 <li class="ml-10"><a @click="isActive = !isActive" class="text-link" href="https://client.zlawyer.fr/sign-in" target="_blank">Accès Client</a></li>
-                <li class="ml-10"><NuxtLink @click="isActive = !isActive" class="text-link" to="/contact"><button class="button-orange">Contact</button></NuxtLink></li>
+                <li class="ml-10"><NuxtLink @click="isActive = !isActive" class="button-orange text-link" to="/contact">Contact</NuxtLink></li>
             </ul>
 
             <div class="burger block xl:hidden">

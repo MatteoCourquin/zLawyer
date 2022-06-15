@@ -2,7 +2,7 @@
     <div class="max-width-blue-section flex flex-col items-center">
         <h2 class="mb-10 text-center">Commencez dès Aujourd'hui</h2>  
 
-        <div class="card-pricing w-full sm:w-max p-20 flex flex-col items-center bg-white rounded-radius-current">
+        <div class="card-pricing w-full sm:w-max p-8 lg:p-20 flex flex-col items-center bg-white rounded-radius-current">
 
           <div class="flex flex-col items-center sm:flex-row sm:justify-around">
 
@@ -16,34 +16,34 @@
 
               <div class="flex items-center w-max">
                 <img :src="checkIcon" alt="icone de validation" class="h-4">
-                <p class="text-2xl ml-4">Facturation</p>
+                <p class="ml-4">Facturation</p>
               </div>
 
               <div class="flex items-center w-max">
                 <img :src="checkIcon" alt="icone de validation" class="h-4">
-                <p class="text-2xl ml-4">Agenda partagé</p>
+                <p class="ml-4">Agenda partagé</p>
               </div>
 
               <div class="flex items-center w-max">
                 <img :src="checkIcon" alt="icone de validation" class="h-4">
-                <p class="text-2xl ml-4">Gestion documentaire</p>
+                <p class="ml-4">Gestion documentaire</p>
               </div>
 
               <div class="flex items-center w-max">
                 <img :src="checkIcon" alt="icone de validation" class="h-4">
-                <p class="text-2xl ml-4">Accès à vos dossiers</p>
+                <p class="ml-4">Accès à vos dossiers</p>
               </div>
 
               <div class="flex items-center w-max">
                 <img :src="checkIcon" alt="icone de validation" class="h-4">
-                <p class="text-2xl ml-4">Sans engagements</p>
+                <p class="ml-4">Sans engagements</p>
               </div>
 
             </div>
 
           </div>
 
-          <NuxtLink to="/contact" class="button-orange mt-12 w-max">Je souhaite une démonstration</NuxtLink>
+          <NuxtLink to="/contact" class="button-orange mt-12 text-center w-full">Je souhaite une démonstration</NuxtLink>
 
         </div>
 
