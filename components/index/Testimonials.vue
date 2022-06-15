@@ -12,7 +12,7 @@
                 <div class="pl-2 border-l-2 border-blue">
                     <p>Un logiciel de gestion est indispensable à tout avocat, autant choisir le meilleur !</p>
                 </div>
-                <p class="client-sign"><span class="text-bolder">Me Christophe Thevenet, Avocat.</span><br>
+                <p class="client-sign"><span class="text-bolder">Mme Christophe Thevenet, Avocat.</span><br>
                 Librato Avocats</p>
             </div>
 

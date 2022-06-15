@@ -17,8 +17,8 @@
             <div class="p-8">
                 <h3 class="mb-8">zLAwyer App</h3>
                 <div class="flex flex-wrap">
-                    <a href="https://apps.apple.com/fr/app/zlawyer/id1174916635?mt=8"><img class="hover:opacity-30 duration-150 cursor-pointer w-40 mr-3 mb-3" :src="badgeAppStore" alt="logo de téléchargement vers l'apple store"></a>
-                    <a href="https://play.google.com/store/apps/details?id=com.zelesolution.zlawyer&hl=fr&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img class="hover:opacity-30 duration-150 cursor-pointer w-40 mr-3 mb-3" :src="badgePlayStore" alt="logo de téléchargement vers le play store"></a>
+                    <a target="_blank" href="https://apps.apple.com/fr/app/zlawyer/id1174916635?mt=8"><img class="hover:opacity-30 duration-150 cursor-pointer w-40 mr-3 mb-3" :src="badgeAppStore" alt="logo de téléchargement vers l'apple store"></a>
+                    <a target="_blank" href="https://play.google.com/store/apps/details?id=com.zelesolution.zlawyer&hl=fr&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img class="hover:opacity-30 duration-150 cursor-pointer w-40 mr-3 mb-3" :src="badgePlayStore" alt="logo de téléchargement vers le play store"></a>
                 </div>
             </div>
 

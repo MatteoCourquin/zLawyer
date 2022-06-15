@@ -42,7 +42,7 @@
         <div class="sm:w-5/6 mt-4 flex flex-col justify-start">
           <div class="flex items-start justify-start max-h-14">
             <img :src="infoIcon" alt="iconInfo" />
-            <h4 class="ml-4">Puis-je adapter mon abonnent ?</h4>
+            <h4 class="ml-4">Puis-je adapter mon abonnement ?</h4>
           </div>
 
           <p class="mt-5">
