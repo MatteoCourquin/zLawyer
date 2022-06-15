@@ -175,16 +175,19 @@ export default {
     @media screen and (max-width : 1000px){
         .card-testimonial{
             width: 70%;
+            padding: 50px;
         }
     }
     @media screen and (max-width : 700px){
         .card-testimonial{
             width: 90%;
+            padding: 30px;
         }
     }
     .card-testimonial .logo-client{
         margin-bottom: 40px;
         height: 50px;
+        border-radius: var(--radius-current);
     }
     .card-testimonial .quote{
         position: absolute;

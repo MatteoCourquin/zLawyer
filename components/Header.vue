@@ -13,9 +13,9 @@
             </ul>
 
             <ul class="items-center hidden header-nav" :class="{ active : isActive }">
-                <li class="ml-10"><a @click="isActive = !isActive" class="text-link" href="#solutions">Solutions</a></li>
-                <li class="ml-10"><a @click="isActive = !isActive" class="text-link" href="#fonctionnalites">Fonctionnalités</a></li>
-                <li class="ml-10"><a @click="isActive = !isActive" class="text-link" href="#clients">Nos Clients</a></li>
+                <li class="ml-10"><a @click="isActive = !isActive" class="text-link" href="/#solutions">Solutions</a></li>
+                <li class="ml-10"><a @click="isActive = !isActive" class="text-link" href="/#fonctionnalites">Fonctionnalités</a></li>
+                <li class="ml-10"><a @click="isActive = !isActive" class="text-link" href="/#clients">Nos Clients</a></li>
                 <li class="ml-10"><a @click="isActive = !isActive" class="text-link" href="https://client.zlawyer.fr/sign-in" target="_blank">Accès Client</a></li>
                 <li class="ml-10"><NuxtLink @click="isActive = !isActive" class="button-orange text-link" to="/contact">Contact</NuxtLink></li>
             </ul>
@@ -34,9 +34,9 @@
 
 <script>
 
-    import zeleLogo from "../../assets/images/logos/zeleLogo.svg";
-    import zeleLogo1 from "../../assets/images/logos/zeleLogo1.svg";
-    import zeleLogo2 from "../../assets/images/logos/zeleLogo2.svg";
+    import zeleLogo from "../assets/images/logos/zeleLogo.svg";
+    import zeleLogo1 from "../assets/images/logos/zeleLogo1.svg";
+    import zeleLogo2 from "../assets/images/logos/zeleLogo2.svg";
 
     export default {
         data() {
@@ -64,7 +64,7 @@
     }
     .btn_burger{
         width: 40px;
-        height: 70px;
+        height: 40px;
         position: relative;
         cursor: pointer;
     }

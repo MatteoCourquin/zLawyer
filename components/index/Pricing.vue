@@ -16,27 +16,27 @@
 
               <div class="flex items-center w-max">
                 <img :src="checkIcon" alt="icone de validation" class="h-4">
-                <p class="ml-4">Facturation</p>
+                <p class="ml-4 text-clip">Facturation</p>
               </div>
 
               <div class="flex items-center w-max">
                 <img :src="checkIcon" alt="icone de validation" class="h-4">
-                <p class="ml-4">Agenda partagé</p>
+                <p class="ml-4 text-clip">Agenda partagé</p>
               </div>
 
               <div class="flex items-center w-max">
                 <img :src="checkIcon" alt="icone de validation" class="h-4">
-                <p class="ml-4">Gestion documentaire</p>
+                <p class="ml-4 text-clip">Gestion documentaire</p>
               </div>
 
               <div class="flex items-center w-max">
                 <img :src="checkIcon" alt="icone de validation" class="h-4">
-                <p class="ml-4">Accès à vos dossiers</p>
+                <p class="ml-4 text-clip">Accès à vos dossiers</p>
               </div>
 
               <div class="flex items-center w-max">
                 <img :src="checkIcon" alt="icone de validation" class="h-4">
-                <p class="ml-4">Sans engagements</p>
+                <p class="ml-4 text-clip">Sans engagements</p>
               </div>
 
             </div>
@@ -70,7 +70,7 @@ export default {
 
     .pricingText {
         color: var(--color-orange);
-        font-family: 'Roboto-regular';
+        font-family: 'Roboto-regular', sans-serif;
         font-weight: 600;
     }
 

@@ -130,6 +130,7 @@
         }
     }
     .card-contact input, .card-contact textarea{
+        font-family: 'Roboto-Regular', sans-serif;
         border: 1px solid var(--color-blue);
         border-radius: 5px;
         padding: 5px 10px;

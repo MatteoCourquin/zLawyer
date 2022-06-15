@@ -52,9 +52,9 @@
 
 <script>
 
-    import badgeAppStore from "../../assets/images/logos/badgeAppStore.svg";
-    import badgePlayStore from "../../assets/images/logos/badgePlayStore.svg";
-    import panda from "../../assets/images/pandas/panda.png";
+    import badgeAppStore from "../assets/images/logos/badgeAppStore.svg";
+    import badgePlayStore from "../assets/images/logos/badgePlayStore.svg";
+    import panda from "../assets/images/pandas/panda.png";
 
     export default {
         data: function () {

@@ -2,13 +2,13 @@
     <div>
         <Header/>
         <Contact/>
-        <!-- <Elements/> -->
+        <Footer/>
     </div>
 </template>
 
 <script>
-import Header from '../components/index/Header.vue';
+import Header from '../components/Header.vue';
 import Contact from '../components/contact/Contact.vue';
-import Elements from '../components/index/Elements.vue';
-export default { components: { Header, Contact, Elements } }
+import Footer from '../components/Footer.vue';
+export default { components: { Header, Contact, Footer } }
 </script>
