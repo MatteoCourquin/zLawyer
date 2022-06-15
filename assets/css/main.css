@@ -1,21 +1,21 @@
 @font-face {
-    font-family: 'Roboto-Light', sans-serif;
+    font-family: 'Roboto-Light';
     src: font-url('~/assets/fonts/roboto/Roboto-Light.ttf') format('truetype');
 }
 @font-face {
-    font-family: 'Roboto-Regular', sans-serif;
+    font-family: 'Roboto-Regular';
     src: font-url('~/assets/fonts/roboto/Roboto-Regular.ttf') format('truetype');
 }
 @font-face {
-    font-family: 'Roboto-Medium', sans-serif;
+    font-family: 'Roboto-Medium';
     src: font-url('~/assets/fonts/roboto/Roboto-Medium.ttf') format('truetype');
 }
 @font-face {
-    font-family: 'Roboto-Bold', sans-serif;
+    font-family: 'Roboto-Bold';
     src: font-url('~/assets/fonts/roboto/Roboto-Bold.ttf') format('truetype');
 }
 @font-face {
-    font-family: 'Roboto-Black', sans-serif;
+    font-family: 'Roboto-Black';
     src: font-url('~/assets/fonts/roboto/Roboto-Black.ttf') format('truetype');
 }
 
@@ -35,6 +35,7 @@
 
     --shadow-current: 0px 0px 20px var(--color-blue);
 }
+
 
 html{
     scroll-behavior: smooth;
@@ -83,33 +84,33 @@ p, .subtitle, a, li{
     color: var(--color-dark-blue);
 }
 h1{
-    font-family: 'Roboto-Bold';
+    font-family: 'Roboto-Bold', sans-serif;
     font-size: clamp(2.5rem, 3.5vw, 4rem);
     line-height: clamp(2.5rem, 4vw, 4rem);
 }
 h2{
-    font-family: 'Roboto-Bold';
+    font-family: 'Roboto-Bold', sans-serif;
     font-size: clamp(2rem, 3vw, 4rem);
     line-height: clamp(2rem, 3.5vw, 4rem);
 }
 h3{
-    font-family: 'Roboto-Medium';
+    font-family: 'Roboto-Medium', sans-serif;
     font-size: clamp(1.5rem, 1.8vw, 2rem);
 }
 h4{
-    font-family: 'Roboto-Medium';
+    font-family: 'Roboto-Medium', sans-serif;
     font-size: clamp(1.5rem, 1.8vw, 2rem);
 }
 p{
-    font-family: 'Roboto-Light';
+    font-family: 'Roboto-Light', sans-serif;
     font-size: 1rem;
 }
 p .text-bolder{
-    font-family: 'Roboto-Regular';
+    font-family: 'Roboto-Regular', sans-serif;
     font-size: 1rem;
 }
 .subtitle{
-    font-family: 'Roboto-Light';
+    font-family: 'Roboto-Light', sans-serif;
     font-size: 1rem;
 }
 .subtitle .text-bolder{
