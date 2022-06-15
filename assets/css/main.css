@@ -101,7 +101,7 @@ h4{
     font-family: 'Roboto-Medium', sans-serif;
     font-size: clamp(1.5rem, 1.8vw, 2rem);
 }
-p{
+p, li{
     font-family: 'Roboto-Light', sans-serif;
     font-size: 1rem;
 }
@@ -118,6 +118,7 @@ p .text-bolder{
 }
 
 .text-link{
+    font-family: 'Roboto-Regular', sans-serif;
     transition: var(--transition-small);
 }
 .text-link:hover{
