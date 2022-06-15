@@ -141,7 +141,7 @@
         border: 1px solid var(--color-orange);
     }
     .card-contact label{
-        font-family: 'Roboto-Medium';
+        font-family: 'Roboto-Medium', sans-serif;
         color: var(--color-dark-blue);
     }
 
