@@ -19,6 +19,7 @@
 
             <!-- Card Advantages Service -->
             <div class="card-advantages">
+                <img class="panda-top hidden md:block absolute w-36" :src="pandaTop" alt="panda">
                 <div class="card-advantages-head">
                     <h3>Service</h3>
                     <svg class="logo-advantages" xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54">
@@ -42,16 +43,14 @@
                     </svg>
                 </div>
                 <p>Sous la tutelle des utilisateurs eux-mêmes et afin de leur faire <span class="text-bolder">gagner du temps</span>, TOUT a été pensé dans ce logiciel pour avocat zLawyer pour être <span class="text-bolder">ultra simple d’utilisation</span> et <span class="text-bolder">intuitif</span>. De la saisie des temps en passant par la gestion des dossiers et évidemment l’émission de factures de la plus simple à la plus complexe, on comprend que ce sont les avocats eux-mêmes qui ont pensé l’outil pour leurs cabinets.
-                </p>
                 <br>
-                <p>
                 L’outil est <span class="text-bolder">personnalisable</span> afin de répondre à votre propre besoin et aller droit au but <span class="text-bolder">rapidement</span> et <span class="text-bolder">facilement</span>. 
                 </p>
             </div>
 
             <!-- Card Advantages Évolutif -->
             <div class="card-advantages">
-                <img class="panda-side hidden md:block absolute h-40" src="~/assets/images/pandas/panda-side.png" alt="panda">
+                <img class="panda-side hidden md:block absolute h-40" :src="pandaSide" alt="panda">
                 <div class="card-advantages-head">
                     <h3>Évolutif</h3>
                     <svg class="logo-advantages" id="Groupe_2" data-name="Groupe 2" xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54">
@@ -65,6 +64,22 @@
         </div>
     </div>
 </template>
+
+<script>
+
+    import pandaSide from "../../assets/images/pandas/pandaSide.png";
+    import pandaTop from "../../assets/images/pandas/pandaTop.png";
+
+    export default {
+        data: function() {
+            return {
+                pandaSide,
+                pandaTop,
+            }
+        },
+    };
+
+</script>
 
 <style scoped>
     .card-advantages {
@@ -98,6 +113,9 @@
 
     .panda-side{
         left: -88px;
+    }
+    .panda-top{
+        top: -53px;
     }
 
 </style>
