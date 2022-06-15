@@ -12,7 +12,7 @@
                 <div class="pl-2 border-l-2 border-blue">
                     <p>Un logiciel de gestion est indispensable à tout avocat, autant choisir le meilleur !</p>
                 </div>
-                <p class="client-sign"><span class="text-bolder">Me Christophe Thevenet, avocat.</span><br>
+                <p class="client-sign"><span class="text-bolder">Me Christophe Thevenet, Avocat.</span><br>
                 Librato Avocats</p>
             </div>
 
@@ -25,7 +25,7 @@
                     <br>
                     <p>Après quelques mois d’utilisation, on peut dire que zLawyer à l’épreuve du terrain répond complètement à notre attente.</p>
                 </div>
-                <p class="client-sign"><span class="text-bolder">Me Thierry Marembert, avocat.</span><br>
+                <p class="client-sign"><span class="text-bolder">Me Thierry Marembert, Avocat.</span><br>
                 Kiejman & Marembert Avocats</p>
             </div>
 
@@ -36,7 +36,7 @@
                 <div class="pl-2 border-l-2 border-blue">
                     <p>Le logiciel zLawyer ? en un mot ? ...la FACILITE !" C'est une solution très agréable et très simple. Il nous est devenu indispensable et il ne tombe jamais en panne.</p>
                 </div>
-                <p class="client-sign"><span class="text-bolder">Me Benoît Gruau, avocat.</span><br>
+                <p class="client-sign"><span class="text-bolder">Me Benoît Gruau, Avocat.</span><br>
                 Richelieu Avocats</p>
             </div>
 
@@ -49,7 +49,7 @@
                     <br>
                     <p>Nous utilisons ZL depuis 7 ans et nous n’avons jamais rencontré aucun problème.</p>
                 </div>
-                <p class="client-sign"><span class="text-bolder">Me Valérie Goffinon, avocat.</span><br>
+                <p class="client-sign"><span class="text-bolder">Me Valérie Goffinon, Secrétaire Général.</span><br>
                 Sekri Valentin Zerouk Avocats</p>
             </div>
 
@@ -60,7 +60,7 @@
                 <div class="pl-2 border-l-2 border-blue">
                     <p>Cela va bientôt faire 10 ans que nous utilisons Z. Un logiciel ergonomique, convivial et d’une simplicité de déploiement et d’utilisation appréciée par l’ensemble de notre équipe. A recommander les yeux fermés.</p>
                 </div>
-                <p class="client-sign"><span class="text-bolder">Me David Guillouet, avocat.</span><br>
+                <p class="client-sign"><span class="text-bolder">Me David Guillouet, Avocat.</span><br>
                 Voltaire Avocats</p>
             </div>
 
@@ -73,7 +73,7 @@
                     <br>
                     <p>En plus de cela, l’équipe dédiée au super est vraiment très réactive. Je recommande à 200% !</p>
                 </div>
-                <p class="client-sign"><span class="text-bolder">Me Thomas Cuq, avocat.</span><br>
+                <p class="client-sign"><span class="text-bolder">Me Thomas Cuq, Avocat.</span><br>
                 Ad Hoc Avocats</p>
             </div>
 
@@ -84,7 +84,7 @@
                 <div class="pl-2 border-l-2 border-blue">
                     <p>J’utilise zLawyer depuis plusieurs années. Il est devenu un outil de facturation incontournable au sein du cabinet. Le vrai plus, une équipe à l’écoute de ses clients et très réactive.</p>
                 </div>
-                <p class="client-sign"><span class="text-bolder">Me Nacime Tobni, avocat.</span><br>
+                <p class="client-sign"><span class="text-bolder">Me Nacime Tobni, Avocat.</span><br>
                 Advance Avocats</p>
             </div>
 
