@@ -1,15 +1,15 @@
 <template>
     <div>
         <Header class="fixed"/>
-        <CGU/>
+        <ContentCgu/>
         <Footer/>
     </div>
 </template>
 
 <script>
     import Header from '../components/index/Header.vue';
-    import CGU from '../components/cgu/CGU.vue';
+    import ContentCgu from '../components/cgu/ContentCgu.vue';
     import Footer from '../components/index/Footer.vue';
 
-    export default { components: { Header, CGU, Footer } }
+    export default { components: { Header, ContentCgu, Footer } }
 </script>
