@@ -4,7 +4,7 @@
         <div class="card-contact h-max grid xl:grid-cols-2 grid-cols-1 overflow-hidden bg-transparent sm:bg-white mx-auto">
             <div class="xl:flex flex-col sm:flex-row items-center md:items-start sm:justify-center md:justify-start flex-auto min-w-0 hidden">
 
-                <div class="relative hidden md:flex flex-auto items-center justify-center w-1/2 h-full p-16 lg:px-28 overflow-hidden bg-gray-800 dark:border-l">
+                <div class="relative hidden md:flex flex-auto items-center justify-center w-1/2 h-full p-16 2xl:p-20 overflow-hidden bg-gray-800 dark:border-l">
 
                     <!-- Rings -->
                     <svg class="absolute inset-0 pointer-events-none"
@@ -28,9 +28,11 @@
                     <!-- Content -->
                     <div class="z-10 relative w-full max-w-2xl">
                         <img class="h-16" :src="zeleLogo" alt="logo zele solutions">
-                        <h2 class="mt-6 text-white">Welcome to our community</h2>
-                        <p class="mt-6 text-blue">
-                            La solution de gestion de cabinets d’avocats simple, ergonomique, sans engagement ! 
+                        <h2 class="mt-6 text-4xl text-white">Un Renseignement ? <br>
+                        Une Démo ? <br>
+                        Contactez-nous !</h2>
+                        <p class="mt-6 text-blue text-bolder text-lg">
+                            La solution de gestion de cabinets d’avocats simple, ergonomique, sans engagement !
                         </p>
                         <div class="mt-14 flex items-center">
                             <img :src="phoneLogo" alt="logo de telephone">
