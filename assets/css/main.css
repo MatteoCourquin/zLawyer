@@ -101,20 +101,13 @@ h4{
     font-family: 'Roboto-Medium', sans-serif;
     font-size: clamp(1.5rem, 1.8vw, 2rem);
 }
-p, li{
+p, li, .subtitle{
     font-family: 'Roboto-Light', sans-serif;
-    font-size: 1rem;
-}
-p .text-bolder{
-    font-family: 'Roboto-Regular', sans-serif;
     font-weight: 200;
     font-size: 1rem;
 }
-.subtitle{
-    font-family: 'Roboto-Light', sans-serif;
-    font-size: 1rem;
-}
-.subtitle .text-bolder{
+.text-bolder{
+    font-family: 'Roboto-Regular', sans-serif;
     font-weight: 400;
     font-size: 1rem;
 }
