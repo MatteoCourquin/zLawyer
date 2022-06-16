@@ -107,7 +107,7 @@ p, li{
 }
 p .text-bolder{
     font-family: 'Roboto-Regular', sans-serif;
-    font-weight: bold;
+    font-weight: 300;
     font-size: 1rem;
 }
 .subtitle{
@@ -115,7 +115,7 @@ p .text-bolder{
     font-size: 1rem;
 }
 .subtitle .text-bolder{
-    font-weight: bold;
+    font-weight: 400;
     font-size: 1rem;
 }
 
