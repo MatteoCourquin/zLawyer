@@ -1,6 +1,6 @@
 <template>
     <div class="max-width-blue-section flex flex-col items-center">
-        <h2 class="mb-10 text-center">Commencez dès Aujourd'hui</h2>  
+        <h2 class="mb-10 text-center">Commencez dès Aujourd'hui</h2>
 
         <div class="card-pricing w-full sm:w-max p-8 lg:p-20 flex flex-col items-center bg-white rounded-radius-current">
 
@@ -14,29 +14,29 @@
 
             <div class="sm:ml-8">
 
-              <div class="flex items-center w-max">
+              <div class="flex items-center w-full">
                 <img :src="checkIcon" alt="icone de validation" class="h-4">
-                <p class="ml-4 text-clip">Facturation</p>
+                <p class="ml-4 w-full text-clip">Facturation</p>
               </div>
 
-              <div class="flex items-center w-max">
+              <div class="flex items-center w-full">
                 <img :src="checkIcon" alt="icone de validation" class="h-4">
-                <p class="ml-4 text-clip">Agenda partagé</p>
+                <p class="ml-4 w-full text-clip">Agenda partagé</p>
               </div>
 
-              <div class="flex items-center w-max">
+              <div class="flex items-center w-full">
                 <img :src="checkIcon" alt="icone de validation" class="h-4">
-                <p class="ml-4 text-clip">Gestion documentaire</p>
+                <p class="ml-4 sm:w-full w-40 text-clip">Gestion documentaire</p>
               </div>
 
-              <div class="flex items-center w-max">
+              <div class="flex items-center w-full">
                 <img :src="checkIcon" alt="icone de validation" class="h-4">
-                <p class="ml-4 text-clip">Accès à vos dossiers</p>
+                <p class="ml-4 w-full text-clip">Accès à vos dossiers</p>
               </div>
 
-              <div class="flex items-center w-max">
+              <div class="flex items-center w-full">
                 <img :src="checkIcon" alt="icone de validation" class="h-4">
-                <p class="ml-4 text-clip">Sans engagements</p>
+                <p class="ml-4 w-full text-clip">Sans engagements</p>
               </div>
 
             </div>
