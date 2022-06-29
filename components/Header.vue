@@ -5,17 +5,19 @@
             <NuxtLink to="/"><img :src="zeleLogo" class="h-12 sm:h-16 cursor-pointer"/></NuxtLink>
 
             <ul class="items-center hidden xl:flex header-nav">
-                <li class="ml-10"><a class="text-link" href="/#solutions">Solutions</a></li>
+                <li class="ml-10"><a class="text-link" href="/#solutions">Avantages</a></li>
                 <li class="ml-10"><a class="text-link" href="/#fonctionnalites">Fonctionnalités</a></li>
-                <li class="ml-10"><a class="text-link" href="/#clients">Nos Clients</a></li>
+                <li class="ml-10"><a class="text-link" href="/#clients">Témoignages</a></li>
+                <NuxtLink class="ml-10 text-link" to="/contact">Contact</NuxtLink>
                 <li class="ml-10"><a class="text-link" href="https://client.zlawyer.fr/sign-in" target="_blank">Accès Client</a></li>
                 <li class="ml-10"><a href="tel:330184257027" class="button-orange text-link">01 84 25 70 27</a></li>
             </ul>
 
             <ul class="items-center hidden header-nav" :class="{ active : isActive }">
-                <li class="ml-10"><a @click="isActive = !isActive" class="text-link" href="/#solutions">Solutions</a></li>
+                <li class="ml-10"><a @click="isActive = !isActive" class="text-link" href="/#solutions">Avantages</a></li>
                 <li class="ml-10"><a @click="isActive = !isActive" class="text-link" href="/#fonctionnalites">Fonctionnalités</a></li>
-                <li class="ml-10"><a @click="isActive = !isActive" class="text-link" href="/#clients">Nos Clients</a></li>
+                <li class="ml-10"><a @click="isActive = !isActive" class="text-link" href="/#clients">Témoignages</a></li>
+                <NuxtLink class="ml-10 text-link" to="/contact">Contact</NuxtLink>
                 <li class="ml-10"><a @click="isActive = !isActive" class="text-link" href="https://client.zlawyer.fr/sign-in" target="_blank">Accès Client</a></li>
                 <li class="ml-10"><a @click="isActive = !isActive" href="tel:330184257027" class="button-orange text-link">01 84 25 70 27</a></li>
             </ul>
@@ -37,6 +39,13 @@
     import zeleLogo from "../assets/images/logos/zeleLogo.svg";
     import zeleLogo1 from "../assets/images/logos/zeleLogo1.svg";
     import zeleLogo2 from "../assets/images/logos/zeleLogo2.svg";
+    import Vue from 'vue'
+    import VueAnalytics from 'vue-analytics'
+
+    Vue.use(VueAnalytics, {
+        id: 'UA-7664894-1'
+    })
+
 
     export default {
         data() {

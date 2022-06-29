@@ -1,7 +1,7 @@
 <template>
     <div class="max-width-blue-section">
 
-        <div class="card-contact h-max grid xl:grid-cols-2 grid-cols-1 overflow-hidden bg-transparent sm:bg-white mx-auto">
+        <div class="card-contact h-max grid xl:grid-cols-2 grid-cols-1 overflow-hidden bg-transparent sm:bg-white mx-auto my-36">
             <div class="xl:flex flex-col sm:flex-row items-center md:items-start sm:justify-center md:justify-start flex-auto min-w-0 hidden">
 
                 <div class="relative hidden md:flex flex-auto items-center justify-center w-1/2 h-full p-16 2xl:p-20 overflow-hidden bg-gray-800 dark:border-l">

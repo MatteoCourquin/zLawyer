@@ -21,11 +21,6 @@
 
               <div class="flex items-center w-full">
                 <img :src="checkIcon" alt="icone de validation" class="h-4">
-                <p class="ml-4 w-full text-clip">Agenda partagé</p>
-              </div>
-
-              <div class="flex items-center w-full">
-                <img :src="checkIcon" alt="icone de validation" class="h-4">
                 <p class="ml-4 sm:w-full w-40 text-clip">Gestion documentaire</p>
               </div>
 
