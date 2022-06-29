@@ -7,7 +7,7 @@
         <div>
             <img class="w-full" :src="illustrationHero2" alt="illustration du logiciel">
             <typewriter :replace="replace" :type-interval="20" :replace-interval="3000">
-                <p class="text-replace font-sans text-center text-2xl hidden lg:block">La solution la mieux notée par vos confrères !</p>
+                <p class="text-replace text-center text-2xl hidden lg:block">La solution la mieux notée par vos confrères !</p>
             </typewriter>
         </div>
 
@@ -45,7 +45,7 @@ export default {
         padding-top: 180px;
     }
     .text-replace{
-        font-family: 'Roboto-Regular';
+        font-family: 'Roboto-Regular', sans-serif;
     }
 
 </style>

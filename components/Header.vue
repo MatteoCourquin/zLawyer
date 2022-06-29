@@ -8,7 +8,7 @@
                 <li class="ml-10"><a class="text-link" href="/#solutions">Avantages</a></li>
                 <li class="ml-10"><a class="text-link" href="/#fonctionnalites">Fonctionnalités</a></li>
                 <li class="ml-10"><a class="text-link" href="/#clients">Témoignages</a></li>
-                <NuxtLink class="ml-10 text-link" to="/contact">Contact</NuxtLink>
+                <li class="ml-10"><NuxtLink class="text-link" to="/contact">Contact</NuxtLink></li>
                 <li class="ml-10"><a class="text-link" href="https://client.zlawyer.fr/sign-in" target="_blank">Accès Client</a></li>
                 <li class="ml-10"><a href="tel:330184257027" class="button-orange text-link">01 84 25 70 27</a></li>
             </ul>
@@ -17,7 +17,7 @@
                 <li class="ml-10"><a @click="isActive = !isActive" class="text-link" href="/#solutions">Avantages</a></li>
                 <li class="ml-10"><a @click="isActive = !isActive" class="text-link" href="/#fonctionnalites">Fonctionnalités</a></li>
                 <li class="ml-10"><a @click="isActive = !isActive" class="text-link" href="/#clients">Témoignages</a></li>
-                <NuxtLink class="ml-10 text-link" to="/contact">Contact</NuxtLink>
+                <li class="ml-10"><NuxtLink class="text-link" to="/contact">Contact</NuxtLink></li>
                 <li class="ml-10"><a @click="isActive = !isActive" class="text-link" href="https://client.zlawyer.fr/sign-in" target="_blank">Accès Client</a></li>
                 <li class="ml-10"><a @click="isActive = !isActive" href="tel:330184257027" class="button-orange text-link">01 84 25 70 27</a></li>
             </ul>
