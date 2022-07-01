@@ -45,7 +45,7 @@ export default {
         padding-top: 180px;
     }
     .text-replace{
-        font-family: 'Roboto-Regular';
+        font-family: 'Roboto-Regular', sans-serif;
     }
 
 </style>

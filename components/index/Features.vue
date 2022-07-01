@@ -32,82 +32,69 @@
             </div>
         </div>
 
-        <!-- Card Features Agenda -->
-        <div class="md:px-8">
-            <div class="card-features">
-                <img class="image-features" :src="features1" alt="illustration de la fonctionnalitée agenda">
-                <div class="card-features-description">
-                    <h3><span class="text-underline">Un agenda</span> partagé au cabinet</h3>
-                    <p>Synchronisés avec Microsoft Outlook , vos rendez-vous – filtrables par dossier – se présentent sous forme d’ agenda ou d’échéancier à 7 jours. En 1 clic, vérifiez la disponibilité d’un autre utilisateur et conviez-le à des RDV. Avec la solution informatique zLawyer: chaque RDV peut faire l’objet d’une facturation.
-                    </p>
-                    <NuxtLink class="button-transparent" to="/contact">Je souhaite une démonstration</NuxtLink>
-                </div>
-            </div>
-        </div>
-
         <!-- Card Features Gestion -->
         <div class="md:px-8">
             <div class="card-features card-features-invert">
+                <img class="image-features" :src="features3" alt="illustration de la fonctionnalitée de gestion">
                 <div class="card-features-description">
                     <h3><span class="text-underline">Une gestion</span> documentaire sans contrainte</h3>
-                    <p>Notre logiciel de gestion de cabinet d’avocat vous aide dans la gestion des documents de chaque dossier : modèles, organisation, classement, et ce, sans privatisation puisque les documents restent évidemment sur votre serveur / disque actuel. En effet, zLawyer sait se greffer à votre organisation actuelle sans aucun changement.
+                    <p>Notre logiciel de gestion de cabinet d’avocat vous aide dans la gestion des documents de chaque dossier : modèles, organisation, classement, et ce, sans privatisation puisque les documents restent évidemment sur votre serveur / disque actuel. En effet, zLawyer sait se greffer à votre organisation actuelle sans aucun changement. (Disponible seulement sous Windows)
                     </p>
                     <NuxtLink class="button-transparent" to="/contact">Je souhaite une démonstration</NuxtLink>
                 </div>
-                <img class="image-features" :src="features1" alt="illustration de la fonctionnalitée de gestion">
             </div>
         </div>
 
         <!-- Card Features Dossiers -->
         <div class="md:px-8">
             <div class="card-features">
-                <img class="image-features" :src="features1" alt="illustration de la fonctionnalitée dossiers">
                 <div class="card-features-description">
                     <h3><span class="text-underline">Dossiers</span> : l’information à portée de main</h3>
                     <p>Avec notre logiciel de gestion de dossiers d’avocat, pas besoin de menus complexes ou de longues manipulations pour tout retrouver. Chaque fenêtre de dossiers vous présente les informations essentielles le concernant :
-                    intervenants (clients, confrères, etc…), les coordonnées complètes, l’état financier du dossier, les factures à relancer.
+                        intervenants (clients, confrères, etc…), les coordonnées complètes, l’état financier du dossier, les factures à relancer.
                     </p>
                     <NuxtLink class="button-transparent" to="/contact">Je souhaite une démonstration</NuxtLink>
                 </div>
+                <img class="image-features" :src="features4" alt="illustration de la fonctionnalitée dossiers">
             </div>
         </div>
 
         <!-- Card Features Essentiel -->
         <div class="md:px-8">
             <div class="card-features card-features-invert">
+            <img class="image-features" :src="features5" alt="illustration de la l'essentiel de l'application">
                 <div class="card-features-description">
                     <h3><span class="text-underline">L’essentiel</span> en un coup d’oeil</h3>
                     <p>La fenêtre principale du logiciel de cabinet d’avocat zLawyer affiche votre tableau de bord personnel. Cette fenêtre vous permet d’accéder à l’ensemble des informations prioritaires de votre activité en un seul coup d’œil : vos échéances, vos dossiers à facturer, vos factures à relancer, et la synthèse de vos saisies des temps .
                     </p>
                     <NuxtLink class="button-transparent" to="/contact">Je souhaite une démonstration</NuxtLink>
                 </div>
-                <img class="image-features" :src="features1" alt="illustration de la l'essentiel de l'application">
             </div>
         </div>
 
         <!-- Card Features Capture -->
         <div class="md:px-8">
             <div class="card-features">
-                <img class="image-features" :src="features1" alt="illustration de la fonctionnalitée timer">
                 <div class="card-features-description">
                     <h3><span class="text-underline">La capture</span> du temps qui passe</h3>
                     <p>Appels téléphoniques, rédaction d’actes, rendez-vous, audiences, réunions internes… Que vous facturiez aux temps ou au forfait, avec le logiciel de gestion de temps zLawyer : consignez bien, facturer mieux et gérer votre budget en un seul clic.
-                    </p>
+                        </p>
                     <NuxtLink class="button-transparent" to="/contact">Je souhaite une démonstration</NuxtLink>
                 </div>
+                <img class="image-features" :src="features6" alt="illustration de la fonctionnalitée timer">
             </div>
         </div>
 
         <!-- Card Features Clients -->
         <div class="md:px-8">
             <div class="card-features card-features-invert">
+                <img class="image-features" :src="features7" alt="illustration de la fonctionnalitée accès client">
                 <div class="card-features-description">
                     <h3>Donnez à vos clients <span class="text-underline">un accès à leur dossier</span> sur le web.</h3>
                     <p>La fenêtre principale du logiciel de cabinet d’avocat zLawyer affiche votre tableau de bord personnel. Cette fenêtre vous permet d’accéder à l’ensemble des informations prioritaires de votre activité en un seul coup d’œil : vos échéances, vos dossiers à facturer, vos factures à relancer, et la synthèse de vos saisies des temps .
                     </p>
                     <NuxtLink class="button-transparent" to="/contact">Je souhaite une démonstration</NuxtLink>
                 </div>
-                <img class="image-features" :src="features1" alt="illustration de la fonctionnalitée accès client">
             </div>
         </div>
 
@@ -117,7 +104,12 @@
 <script>
 
 import features1 from "../../assets/images/features/features1.png";
-import features2 from "../../assets/images/features/illustrationMobile.png";
+import features2 from "../../assets/images/features/features2.png";
+import features3 from "../../assets/images/features/features3.png";
+import features4 from "../../assets/images/features/features4.png";
+import features5 from "../../assets/images/features/features5.png";
+import features6 from "../../assets/images/features/features6.png";
+import features7 from "../../assets/images/features/features7.png";
 import badgeAppStore from "../../assets/images/logos/badgeAppStore.svg";
 import badgePlayStore from "../../assets/images/logos/badgePlayStore.svg";
 
@@ -129,6 +121,11 @@ export default {
 
             features1,
             features2,
+            features3,
+            features4,
+            features5,
+            features6,
+            features7,
         }
     },
 }

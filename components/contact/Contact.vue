@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
   <div class="max-width-blue-section">
     <div
       class="card-contact h-max grid xl:grid-cols-2 grid-cols-1 overflow-hidden bg-transparent sm:bg-white mx-auto"
@@ -86,6 +87,55 @@
                 9, rue Angélique Verien, <br />
                 92200, Neuilly-sur-Seine
               </p>
+=======
+    <div class="max-width-blue-section">
+
+        <div class="card-contact h-max grid xl:grid-cols-2 grid-cols-1 overflow-hidden bg-transparent sm:bg-white mx-auto my-36">
+            <div class="xl:flex flex-col sm:flex-row items-center md:items-start sm:justify-center md:justify-start flex-auto min-w-0 hidden">
+
+                <div class="relative hidden md:flex flex-auto items-center justify-center w-1/2 h-full p-16 2xl:p-20 overflow-hidden bg-gray-800 dark:border-l">
+
+                    <!-- Rings -->
+                    <svg class="absolute inset-0 pointer-events-none"
+                        viewBox="0 0 960 540" width="100%" height="100%" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg">
+                        <g class="text-gray-700 opacity-25" fill="none" stroke="currentColor" stroke-width="100">
+                            <circle r="234" cx="196" cy="23"></circle>
+                            <circle r="234" cx="790" cy="491"></circle>
+                        </g>
+                    </svg>
+                    <!-- Dots -->
+                    <svg class="absolute -top-16 -right-16 text-gray-700"
+                        viewBox="0 0 220 192" width="220" height="192" fill="none">
+                        <defs>
+                            <pattern id="837c3e70-6c3a-44e6-8854-cc48c737b659" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                                <rect x="0" y="0" width="4" height="4" fill="currentColor"></rect>
+                            </pattern>
+                        </defs>
+                        <rect width="220" height="192" fill="url(#837c3e70-6c3a-44e6-8854-cc48c737b659)"></rect>
+                    </svg>
+
+                    <!-- Content -->
+                    <div class="z-10 relative w-full max-w-2xl">
+                        <img class="h-16" :src="zeleLogo" alt="logo zele solutions">
+                        <h2 class="mt-6 text-4xl text-white">Un Renseignement ? <br>
+                        Une Démo ? <br>
+                        Contactez-nous !</h2>
+                        <p class="mt-6 text-blue text-bolder text-lg">
+                            La solution de gestion de cabinets d’avocats simple, ergonomique, sans engagement !
+                        </p>
+                        <div class="mt-14 flex items-center">
+                            <img :src="phoneLogo" alt="logo de telephone">
+                            <p class="ml-4 flex-shrink-0"><a class="text-blue" href="tel:330184257027">01 84 25 70 27</a></p>
+                        </div>
+                        <div class="mt-14 flex items-center">
+                            <img class="ml-2" :src="locaLogo" alt="logo de localisation">
+                            <p class="ml-6 text-blue flex-shrink-0">Zele Solutions <br>
+                            9, rue Angélique Verien, <br>
+                            92200, Neuilly-sur-Seine</p>
+                        </div>
+                    </div>
+                </div>
+>>>>>>> c61a912bf8ab0e200ba89d8927240abbed8008b7
             </div>
           </div>
         </div>

@@ -1,6 +1,6 @@
 <template>
-    <div class="max-width-blue-section">
-        <h2 class="mb-20">Ce qu’ils pensent de nous</h2>
+    <div class="max-width-blue-section" id="clients">
+        <h2 class="mb-20">Témoignages</h2>
 
         <!-- Slider Container  -->
         <div class="slider-testimonials flex gap-10" ref="sliderContainer" :style="slider">
