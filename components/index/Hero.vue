@@ -30,7 +30,7 @@ export default {
             illustrationHero1,
             illustrationHero2,
             replace: [
-                { from: "La solution la mieux notée par vos confrères", to: "Ils gèrent leurs cabinets avec zLawyer, et ça se voit !" },
+                { from: "La solution la mieux notée par vos confrères", to: "Votre solution de gestion de cabinet qui vous fait gagner du temps !" },
             ],
         }
     },

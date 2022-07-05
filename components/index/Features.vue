@@ -1,7 +1,7 @@
 <template>
     <div class="max-width-blue-section" id="fonctionnalites">
         <h2>Fonctionnalités</h2>
-        <p class="subtitle md:w-2/3 xl:w-1/2">zLawyer a été conçu par des Avocats. Cela permet de garantir que les <span class="text-bolder">fonctionnalités et l’ergonomie</span> proposées sont adaptées aux cabinets de petites et grandes tailles.</p>
+        <p class="subtitle md:w-2/3 xl:w-1/2">zLawyer a été conçu en étroite <span class="text-bolder">collaboration avec des avocats</span>, garantissant des <span class="text-bolder">fonctionnalités</span> et une <span class="text-bolder">ergonomie</span> qui répondent précisément aux exigences des cabinets de petites et grandes tailles.</p>
 
         <!-- Card Features Facturation -->
         <div class="md:px-8">
@@ -9,7 +9,7 @@
                 <img class="image-features" :src="features1" alt="illustration de la fonctionnalitée facturation">
                 <div class="card-features-description">
                     <h3><span class="text-underline">Facturation</span> <br> Arbitrer & gérer la rentabilité</h3>
-                    <p>Que vous souhaitiez mesurer les temps réels passés, valoriser le coût global réel du dossier, faire vos arbitrages de facturation sans effacer les durées réelles et donc vos coûts réels, notre logiciel de facturation pour avocat vous offre la possibilité de mesurer efficacement la rentabilité de vos dossiers ou de vos forfaits …
+                    <p>Que vous souhaitiez mesurer les temps réels passés, valoriser le coût global réel du dossier, faire vos arbitrages de facturation sans effacer les durées réelles et donc vos coûts réels, notre solution de facturation pour avocat vous offre la possibilité de mesurer efficacement la rentabilité de vos dossiers ou de vos forfaits …
                     </p>
                     <NuxtLink class="button-transparent" to="/contact">Je souhaite une démonstration</NuxtLink>
                 </div>
@@ -28,17 +28,17 @@
                         <a target="_blank" href="https://play.google.com/store/apps/details?id=com.zelesolution.zlawyer&hl=fr&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img class="hover:opacity-30 duration-150 cursor-pointer w-40 mr-3 mb-3" :src="badgePlayStore" alt="logo de téléchargement vers le play store"></a>
                     </div>
                 </div>
-                <img class="image-features" :src="features2" alt="illustration de l'application mobile">
+                <img :src="features2" alt="illustration de l'application mobile">
             </div>
         </div>
 
         <!-- Card Features Gestion -->
         <div class="md:px-8">
-            <div class="card-features card-features-invert">
+            <div class="card-features">
                 <img class="image-features" :src="features3" alt="illustration de la fonctionnalitée de gestion">
                 <div class="card-features-description">
                     <h3><span class="text-underline">Une gestion</span> documentaire sans contrainte</h3>
-                    <p>Notre logiciel de gestion de cabinet d’avocat vous aide dans la gestion des documents de chaque dossier : modèles, organisation, classement, et ce, sans privatisation puisque les documents restent évidemment sur votre serveur / disque actuel. En effet, zLawyer sait se greffer à votre organisation actuelle sans aucun changement. (Disponible seulement sous Windows)
+                    <p>Notre solution de gestion de cabinet d’avocat vous aide dans la gestion des documents de chaque dossier : modèles, organisation, classement, et ce, sans privatisation puisque les documents restent évidemment sur votre serveur / disque actuel. En effet, zLawyer sait se greffer à votre organisation actuelle sans aucun changement. (Disponible seulement sous Windows)
                     </p>
                     <NuxtLink class="button-transparent" to="/contact">Je souhaite une démonstration</NuxtLink>
                 </div>
@@ -47,10 +47,10 @@
 
         <!-- Card Features Dossiers -->
         <div class="md:px-8">
-            <div class="card-features">
+            <div class="card-features card-features-invert">
                 <div class="card-features-description">
                     <h3><span class="text-underline">Dossiers</span> : l’information à portée de main</h3>
-                    <p>Avec notre logiciel de gestion de dossiers d’avocat, pas besoin de menus complexes ou de longues manipulations pour tout retrouver. Chaque fenêtre de dossiers vous présente les informations essentielles le concernant :
+                    <p>Avec notre solution de gestion de dossiers d’avocat, pas besoin de menus complexes ou de longues manipulations pour tout retrouver. Chaque fenêtre de dossiers vous présente les informations essentielles le concernant :
                         intervenants (clients, confrères, etc…), les coordonnées complètes, l’état financier du dossier, les factures à relancer.
                     </p>
                     <NuxtLink class="button-transparent" to="/contact">Je souhaite une démonstration</NuxtLink>
@@ -61,11 +61,11 @@
 
         <!-- Card Features Essentiel -->
         <div class="md:px-8">
-            <div class="card-features card-features-invert">
+            <div class="card-features">
             <img class="image-features" :src="features5" alt="illustration de la l'essentiel de l'application">
                 <div class="card-features-description">
                     <h3><span class="text-underline">L’essentiel</span> en un coup d’oeil</h3>
-                    <p>La fenêtre principale du logiciel de cabinet d’avocat zLawyer affiche votre tableau de bord personnel. Cette fenêtre vous permet d’accéder à l’ensemble des informations prioritaires de votre activité en un seul coup d’œil : vos échéances, vos dossiers à facturer, vos factures à relancer, et la synthèse de vos saisies des temps .
+                    <p>La fenêtre principale de la solution de cabinet d’avocat zLawyer affiche votre tableau de bord personnel. Cette fenêtre vous permet d’accéder à l’ensemble des informations prioritaires de votre activité en un seul coup d’œil : vos échéances, vos dossiers à facturer, vos factures à relancer, et la synthèse de vos saisies des temps .
                     </p>
                     <NuxtLink class="button-transparent" to="/contact">Je souhaite une démonstration</NuxtLink>
                 </div>
@@ -74,10 +74,10 @@
 
         <!-- Card Features Capture -->
         <div class="md:px-8">
-            <div class="card-features">
+            <div class="card-features card-features-invert">
                 <div class="card-features-description">
                     <h3><span class="text-underline">La capture</span> du temps qui passe</h3>
-                    <p>Appels téléphoniques, rédaction d’actes, rendez-vous, audiences, réunions internes… Que vous facturiez aux temps ou au forfait, avec le logiciel de gestion de temps zLawyer : consignez bien, facturer mieux et gérer votre budget en un seul clic.
+                    <p>Appels téléphoniques, rédaction d’actes, rendez-vous, audiences, réunions internes… Que vous facturiez aux temps ou au forfait, avec la solution de gestion de temps zLawyer : consignez bien, facturer mieux et gérer votre budget en un seul clic.
                         </p>
                     <NuxtLink class="button-transparent" to="/contact">Je souhaite une démonstration</NuxtLink>
                 </div>
@@ -87,11 +87,11 @@
 
         <!-- Card Features Clients -->
         <div class="md:px-8">
-            <div class="card-features card-features-invert">
+            <div class="card-features">
                 <img class="image-features" :src="features7" alt="illustration de la fonctionnalitée accès client">
                 <div class="card-features-description">
                     <h3>Donnez à vos clients <span class="text-underline">un accès à leur dossier</span> sur le web.</h3>
-                    <p>La fenêtre principale du logiciel de cabinet d’avocat zLawyer affiche votre tableau de bord personnel. Cette fenêtre vous permet d’accéder à l’ensemble des informations prioritaires de votre activité en un seul coup d’œil : vos échéances, vos dossiers à facturer, vos factures à relancer, et la synthèse de vos saisies des temps .
+                    <p>La fenêtre principale de la solution de cabinet d’avocat zLawyer affiche votre tableau de bord personnel. Cette fenêtre vous permet d’accéder à l’ensemble des informations prioritaires de votre activité en un seul coup d’œil : vos échéances, vos dossiers à facturer, vos factures à relancer, et la synthèse de vos saisies des temps .
                     </p>
                     <NuxtLink class="button-transparent" to="/contact">Je souhaite une démonstration</NuxtLink>
                 </div>

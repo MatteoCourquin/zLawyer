@@ -13,7 +13,7 @@
                         <path id="Icon_ionic-ios-star" data-name="Icon ionic-ios-star" d="M29.179,12.372H19.988L17.2,4.037a1.012,1.012,0,0,0-1.9,0L12.5,12.372H3.25a1,1,0,0,0-1,1,.735.735,0,0,0,.019.169.96.96,0,0,0,.419.706l7.554,5.323L7.342,28a1,1,0,0,0,.344,1.125.967.967,0,0,0,.562.244,1.225,1.225,0,0,0,.625-.225l7.373-5.255,7.373,5.255a1.171,1.171,0,0,0,.625.225.9.9,0,0,0,.556-.244A.99.99,0,0,0,25.143,28l-2.9-8.429L29.735,14.2l.181-.156a1.048,1.048,0,0,0,.325-.669A1.058,1.058,0,0,0,29.179,12.372Z" transform="translate(10.755 10.629)" fill="#fff"/>
                     </svg>
                 </div>
-                <p>Année après année, nos partenaires avocats ont fait évoluer le logiciel avocat zLawyer pour le rendre tout simplement <span class="text-bolder">complet</span> afin de répondre à l’ensemble de vos besoins : la <span class="text-bolder">gestion de vos dossiers</span>, de <span class="text-bolder">vos temps</span>, la <span class="text-bolder">facturation des honoraires</span>, les <span class="text-bolder">frais et des débours</span>, le <span class="text-bolder">suivi</span>, <span class="text-bolder">relance automatique des impayés</span>, la <span class="text-bolder">gestion documentaire</span>, l’<span class="text-bolder">agenda</span>, les <span class="text-bolder">tâches</span>, <span class="text-bolder">export comptable</span>, <span class="text-bolder">tableau de bord</span>, etc …
+                <p>Année après année, nos partenaires avocats ont fait évoluer la solution avocat zLawyer pour le rendre tout simplement <span class="text-bolder">complet</span> afin de répondre à l’ensemble de vos besoins : la <span class="text-bolder">gestion de vos dossiers</span>, de <span class="text-bolder">vos temps</span>, la <span class="text-bolder">facturation des honoraires</span>, les <span class="text-bolder">frais et des débours</span>, le <span class="text-bolder">suivi</span>, <span class="text-bolder">relance automatique des impayés</span>, la <span class="text-bolder">gestion documentaire</span>, l’<span class="text-bolder">agenda</span>, les <span class="text-bolder">tâches</span>, <span class="text-bolder">export comptable</span>, <span class="text-bolder">tableau de bord</span>, etc …
                 </p>
             </div>
 
@@ -29,7 +29,7 @@
                         </g>
                     </svg>
                 </div>
-                <p>De la formation à l’outil en passant par la hotline, un seul mot d’ordre: chaque utilisateur a chez nous le statut <span class="text-bolder">Premium</span>. VOTRE besoin est notre ADN. Voilà pourquoi <span class="text-bolder">disponibilité</span>, <span class="text-bolder">rapidité</span>, <span class="text-bolder">amabilité</span> et <span class="text-bolder">efficacité</span> sont devenues les maîtres-mots de notre logiciel .
+                <p>De la formation à l’outil en passant par la hotline, un seul mot d’ordre: chaque utilisateur a chez nous le statut <span class="text-bolder">Premium</span>. VOTRE besoin est notre ADN. Voilà pourquoi <span class="text-bolder">disponibilité</span>, <span class="text-bolder">rapidité</span>, <span class="text-bolder">amabilité</span> et <span class="text-bolder">efficacité</span> sont devenues les maîtres-mots de notre solution .
                 </p>
             </div>
 
@@ -42,7 +42,7 @@
                         <path id="Icon_material-thumb-up" data-name="Icon material-thumb-up" d="M1.5,24.288H6.058V10.615H1.5ZM26.567,11.755a2.286,2.286,0,0,0-2.279-2.279H17.1l1.082-5.207.034-.365a1.715,1.715,0,0,0-.5-1.208L16.506,1.5l-7.5,7.509a2.228,2.228,0,0,0-.672,1.607V22.009a2.286,2.286,0,0,0,2.279,2.279H20.87a2.263,2.263,0,0,0,2.1-1.39l3.441-8.033a2.251,2.251,0,0,0,.16-.832V11.857l-.011-.011Z" transform="translate(12.967 14.106)" fill="#fff"/>
                     </svg>
                 </div>
-                <p>Sous la tutelle des utilisateurs eux-mêmes et afin de leur faire <span class="text-bolder">gagner du temps</span>, TOUT a été pensé dans ce logiciel pour avocat zLawyer pour être <span class="text-bolder">ultra simple d’utilisation</span> et <span class="text-bolder">intuitif</span>. De la saisie des temps en passant par la gestion des dossiers et évidemment l’émission de factures de la plus simple à la plus complexe, on comprend que ce sont les avocats eux-mêmes qui ont pensé l’outil pour leurs cabinets.
+                <p>Sous la tutelle des utilisateurs eux-mêmes et afin de leur faire <span class="text-bolder">gagner du temps</span>, TOUT a été pensé dans cette solution pour avocat zLawyer pour être <span class="text-bolder">ultra simple d’utilisation</span> et <span class="text-bolder">intuitif</span>. De la saisie des temps en passant par la gestion des dossiers et évidemment l’émission de factures de la plus simple à la plus complexe, on comprend que ce sont les avocats eux-mêmes qui ont pensé l’outil pour leurs cabinets.
                 <br>
                 L’outil est <span class="text-bolder">personnalisable</span> afin de répondre à votre propre besoin et aller droit au but <span class="text-bolder">rapidement</span> et <span class="text-bolder">facilement</span>. 
                 </p>

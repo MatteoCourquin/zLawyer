@@ -78,7 +78,7 @@
               Contactez-nous !
             </h2>
             <p class="mt-6 text-blue text-bolder text-lg">
-              La solution de gestion de cabinets d’avocats simple, ergonomique,
+              zLawyer, la solution de gestion de cabinets d’avocats simple, ergonomique,
               sans engagement !
             </p>
             <div class="mt-14 flex items-center">

@@ -1,5 +1,5 @@
 <template>
-    <div class="max-width-blue-section" id="clients">
+    <div class="max-width-blue-section relative" id="clients">
         <h2 class="mb-20">Témoignages</h2>
 
         <!-- Slider Container  -->
@@ -95,7 +95,6 @@
             <img @click="slideRight()" class="cursor-pointer" :src="arrowRight" alt="fleche de direction slider">
         </div>
 
-        <!-- <p>{{ slideDuration }}</p> -->
     </div>
 </template>
 
@@ -129,8 +128,6 @@ export default {
             // Slider
             counter: 0,
             cardWidth: 0,
-            // slideDuration: 2000,
-            // setInterval: setInterval( () => { this.slideRight() }, this.slideDuration),
         }
     },
     methods:{
@@ -157,25 +154,7 @@ export default {
                 this.cardWidth = (this.cardWidth + 40) * this.counter;
             }
         },
-        // startSlider: function(setInterval){
-        //     setInterval = setInterval( () => { this.slideRight() }, this.slideDuration);
-        //     // setInterval( () => { this.slideRight() }, this.slideDuration)
-        //     console.log("Slider ON");
-        // },
-        // stopSlider: function(){
-        //     this.slideDuration = 10000
-        //     setInterval( () => { this.slideRight() }, this.slideDuration);
-        //     console.log("Slider OFF");
-        //     // setTimeout(() => {
-        //     //     this.slideDuration = 500
-        //     //     this.startSlider()
-        //     // }, 20000);
-        // }
     },
-    // mounted() {
-    //     this.startSlider(this.setInterval);
-    //     console.log("slider ON")
-    // },
     computed: {
         // Style to slide the card
         slider() {
@@ -200,10 +179,10 @@ export default {
         background-color: var(--color-white);
         box-shadow: var(--shadow-current);
     }
-    @media screen and (max-width : 1000px){
+    @media screen and (max-width : 1200px){
         .card-testimonial{
             width: 70%;
-            padding: 40px;
+            padding: 30px;
         }
     }
     @media screen and (max-width : 700px){
