@@ -282,13 +282,21 @@ export default {
   outline: none;
 }
 .card-contact input:hover,
-.card-contact select:hover .card-contact textarea:hover {
+.card-contact select:hover,
+.card-contact textarea:hover {
   border: 1px solid var(--color-orange);
 }
 .card-contact label {
   font-family: "Roboto-Medium", sans-serif;
   color: var(--color-dark-blue);
 }
+.card-contact input,
+.card-contact select,
+.card-contact textarea {
+  font-family: "Roboto-medium", sans-serif;
+  color: #394454b5;
+}
+
 
 .contact-card-form {
   display: flex;
