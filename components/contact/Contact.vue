@@ -1,5 +1,5 @@
 <template>
-  <div class="max-width-blue-section">
+  <div class="max-width-blue-section container-contact">
     <p
       class="text-response"
       :class="[isSuccess ? 'text-green-600' : 'text-red-600']"
@@ -8,7 +8,7 @@
     </p>
 
     <div
-      class="card-contact h-max grid xl:grid-cols-2 grid-cols-1 overflow-hidden bg-transparent sm:bg-white mx-auto my-36"
+      class="card-contact grid xl:grid-cols-2 grid-cols-1 overflow-hidden bg-transparent sm:bg-white mx-auto"
     >
       <div
         class="xl:flex flex-col sm:flex-row items-center md:items-start sm:justify-center md:justify-start flex-auto min-w-0 hidden"
@@ -251,6 +251,15 @@ export default {
 </script>
 
 <style scoped>
+
+.container-contact{
+  min-height: 950px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .card-contact {
   width: 80%;
   border-radius: var(--radius-current);
