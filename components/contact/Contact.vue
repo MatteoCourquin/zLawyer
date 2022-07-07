@@ -1,6 +1,5 @@
 <template>
   <div class="max-width-blue-section">
-
     <p
       class="text-response"
       :class="[isSuccess ? 'text-green-600' : 'text-red-600']"
@@ -78,8 +77,8 @@
               Contactez-nous !
             </h2>
             <p class="mt-6 text-blue text-bolder text-lg">
-              zLawyer, la solution de gestion de cabinets d’avocats simple, ergonomique,
-              sans engagement !
+              zLawyer, la solution de gestion de cabinets d’avocats simple,
+              ergonomique, sans engagement !
             </p>
             <div class="mt-14 flex items-center">
               <img :src="phoneLogo" alt="logo de telephone" />
@@ -121,7 +120,12 @@
 
           <div class="flex flex-col p-2">
             <label for="country">Pays</label>
-            <input type="text" id="country" name="country" v-model="pays" />
+            <select name="pays" id="pays">
+              <option v-for="pays in allPays" :value="pays">
+                {{ pays }}
+              </option>
+            </select>
+            <!-- <input type="text" id="country" name="country" v-model="pays" /> -->
           </div>
 
           <div class="grid grid-cols-2">
@@ -180,6 +184,7 @@ import axios from "axios";
 import zeleLogo from "../../assets/images/logos/zeleLogo.svg";
 import phoneLogo from "../../assets/images/logos/phoneLogo.svg";
 import locaLogo from "../../assets/images/logos/locaLogo.svg";
+import json from "../../assets/data/pays.json";
 
 export default {
   data() {
@@ -187,6 +192,12 @@ export default {
       zeleLogo,
       phoneLogo,
       locaLogo,
+
+      allPays: [
+        // "France",
+        // "Allemagne",
+        // "Chine",
+      ],
 
       cabinet: "",
       pays: "",
@@ -199,6 +210,9 @@ export default {
       isSuccess: false,
       response: "",
     };
+  },
+  mounted() {
+    this.allPays = json;
   },
   methods: {
     onSubmit() {
@@ -224,7 +238,7 @@ export default {
             console.log("SUCCESS");
             this.isSuccess = response.status === 200 ? true : false;
             this.response = response.data;
-            this.$router.push('/contact-success');
+            this.$router.push("/contact-success");
           },
           (response) => {
             console.log("ERROR");
@@ -249,6 +263,7 @@ export default {
   }
 }
 .card-contact input,
+.card-contact select,
 .card-contact textarea {
   font-family: "Roboto-Regular", sans-serif;
   border: 1px solid var(--color-blue);
@@ -258,7 +273,7 @@ export default {
   outline: none;
 }
 .card-contact input:hover,
-.card-contact textarea:hover {
+.card-contact select:hover .card-contact textarea:hover {
   border: 1px solid var(--color-orange);
 }
 .card-contact label {
