@@ -169,6 +169,8 @@
             />
           </div>
 
+          <recaptcha />
+
           <button type="submit" class="button-orange mx-2 my-10 w-max">
             Envoyer
           </button>
@@ -187,6 +189,7 @@ import locaLogo from "../../assets/images/logos/locaLogo.svg";
 import json from "../../assets/data/pays.json";
 
 export default {
+
   data() {
     return {
       zeleLogo,
@@ -246,13 +249,34 @@ export default {
           }
         );
     },
+
+    async onSubmit() {
+      try {
+        const token = await this.$recaptcha.getResponse();
+        console.log("ReCaptcha token:", token);
+
+        // send token to server alongside your form data
+
+        // at the end you need to reset recaptcha
+        await this.$recaptcha.reset();
+      } catch (error) {
+        console.log("Login error:", error);
+      }
+    },
+    onSuccess (token) {
+      console.log('Succeeded:', token)
+    },
+
+    onExpired () {
+      console.log('Expired')
+    },
+
   },
 };
 </script>
 
 <style scoped>
-
-.container-contact{
+.container-contact {
   min-height: 950px;
   height: 100vh;
   display: flex;
@@ -296,7 +320,6 @@ export default {
   font-family: "Roboto-medium", sans-serif;
   color: #394454b5;
 }
-
 
 .contact-card-form {
   display: flex;

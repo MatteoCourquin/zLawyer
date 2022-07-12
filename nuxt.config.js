@@ -18,7 +18,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-      '~/assets/css/main.css'
+    '~/assets/css/main.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -42,7 +42,21 @@ export default {
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: [
+    '@nuxtjs/recaptcha',
+  ],
+
+  publicRuntimeConfig: {
+    recaptcha: {
+      /* reCAPTCHA options */
+      hideBadge: false,
+      language: 'FR',   // Recaptcha language (v2)
+      //mode: 'enterprise',       // Mode: 'base', 'enterprise'
+      siteKey: process.env.RECAPTCHA_SITE_KEY,    // Site key for requests
+      version: 2,    // Version
+      size: 'normal'        // Size: 'compact', 'normal', 'invisible' (v2)
+    }
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
