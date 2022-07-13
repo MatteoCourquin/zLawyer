@@ -1,12 +1,5 @@
 <template>
   <div class="max-width-blue-section container-contact">
-    <p
-      class="text-response"
-      :class="[isSuccess ? 'text-green-600' : 'text-red-600']"
-    >
-      {{ response }}
-    </p>
-
     <div
       class="card-contact grid xl:grid-cols-2 grid-cols-1 overflow-hidden bg-transparent sm:bg-white mx-auto"
     >
@@ -171,6 +164,13 @@
 
           <recaptcha />
 
+            <p
+              class="text-response"
+              :class="[isSuccess ? 'text-green-600' : 'text-red-600']"
+            >
+              {{ response }}
+            </p>
+
           <button type="submit" class="button-orange mx-2 my-10 w-max">
             Envoyer
           </button>
@@ -189,7 +189,6 @@ import locaLogo from "../../assets/images/logos/locaLogo.svg";
 import json from "../../assets/data/pays.json";
 
 export default {
-
   data() {
     return {
       zeleLogo,
@@ -228,6 +227,7 @@ export default {
         telephone: this.telephone,
         message: this.message,
       };
+
       console.log(data);
 
       axios
@@ -250,7 +250,7 @@ export default {
         );
     },
 
-    async onSubmit() {
+    async reTry() {
       try {
         const token = await this.$recaptcha.getResponse();
         console.log("ReCaptcha token:", token);
@@ -263,14 +263,13 @@ export default {
         console.log("Login error:", error);
       }
     },
-    onSuccess (token) {
-      console.log('Succeeded:', token)
+    onSuccess(token) {
+      console.log("Succeeded:", token);
     },
 
-    onExpired () {
-      console.log('Expired')
+    onExpired() {
+      console.log("Expired");
     },
-
   },
 };
 </script>
@@ -320,16 +319,21 @@ export default {
   font-family: "Roboto-medium", sans-serif;
   color: #394454b5;
 }
-
 .contact-card-form {
   display: flex;
   flex-direction: column;
 }
 
+.g-recaptcha {
+  margin-top: 1rem;
+}
+
 .text-response {
-  position: absolute;
-  left: 50%;
-  top: 200px;
-  transform: translate(-50%, -50%);
+  padding-top: 1rem;
+}
+
+.text-response,
+.g-recaptcha {
+  padding-left: 0.5rem;
 }
 </style>
