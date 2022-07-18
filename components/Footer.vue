@@ -26,12 +26,9 @@
                 <h3 class="mb-8">Ressources</h3>
                 <div class="grid grid-cols-1 lg:grid-cols-2">
                     <div class="pb-4">
-                        <!-- <a class="text-link block" download="TeamViewerQS.exe" href="https://download.teamviewer.com/download/TeamViewerQS.exe">Assistance à distance (Teamviewer)</a>
+                        <a class="text-link block" download href="https://download.teamviewer.com/download/TeamViewerQS.exe">Assistance à distance (Teamviewer)</a>
                         <a class="text-link block" target="_blank" href="https://anydesk.com/fr/downloads">Assistance à distance (Anydesk)</a>
-                        <a class="text-link block" download="zLawyerStp.exe" href="http://www.zlawyer.fr/private/zlawyerstp.exe">Installation zLawyer</a> -->
-                        <a class="text-link block" download="TeamViewerQS.exe" href="https://download.teamviewer.com/download/TeamViewerQS.exe">Assistance à distance (Teamviewer)</a>
-                        <a class="text-link block" target="_blank" href="https://anydesk.com/fr/downloads">Assistance à distance (Anydesk)</a>
-                        <a class="text-link block" href="/download/zlawyerstp.exe">Installation zLawyer</a>
+                        <a class="text-link block" download href="/download/zlawyerstp.exe">Installation zLawyer</a>
 
                     </div>
 
