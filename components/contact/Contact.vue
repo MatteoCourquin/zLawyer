@@ -1,12 +1,5 @@
 <template>
   <div class="max-width-blue-section container-contact">
-    <p
-      class="text-response"
-      :class="[isSuccess ? 'text-green-600' : 'text-red-600']"
-    >
-      {{ response }}
-    </p>
-
     <div
       class="card-contact grid xl:grid-cols-2 grid-cols-1 overflow-hidden bg-transparent sm:bg-white mx-auto"
     >
@@ -121,7 +114,7 @@
           <div class="flex flex-col p-2">
             <label for="country">Pays</label>
             <select name="pays" id="pays">
-              <option v-for="pays in allPays" :value="pays">
+              <option v-for="pays in allPays" :key="pays" :value="pays">
                 {{ pays }}
               </option>
             </select>
@@ -169,6 +162,15 @@
             />
           </div>
 
+          <recaptcha />
+
+          <p
+            class="text-response"
+            :class="[isSuccess ? 'text-green-600' : 'text-red-600']"
+          >
+            {{ response }}
+          </p>
+
           <button type="submit" class="button-orange mx-2 my-10 w-max">
             Envoyer
           </button>
@@ -211,48 +213,65 @@ export default {
       response: "",
     };
   },
-  mounted() {
+  async mounted() {
     this.allPays = json;
+    try {
+      await this.$recaptcha.init();
+    } catch (e) {
+      console.error(e);
+    }
   },
   methods: {
-    onSubmit() {
-      let data = {
-        cabinet: this.cabinet,
-        pays: this.pays,
-        nom: this.nom,
-        prenom: this.prenom,
-        email: this.email,
-        telephone: this.telephone,
-        message: this.message,
-      };
-      console.log(data);
+    async onSubmit() {
+      try {
+        const token = await this.$recaptcha.getResponse();
+        console.log("ReCaptcha token:", token);
 
-      axios
-        .post("https://zlawyercontact.azurewebsites.net/api/contact", data, {
-          headers: {
-            Accept: "application/json",
-          },
-        })
-        .then(
-          (response) => {
-            console.log("SUCCESS");
-            this.isSuccess = response.status === 200 ? true : false;
-            this.response = response.data;
-            this.$router.push("/contact-success");
-          },
-          (response) => {
-            console.log("ERROR");
-            this.response = response.response.data;
-          }
-        );
+        // send token to server alongside your form data
+
+        // at the end you need to reset recaptcha
+        await this.$recaptcha.reset();
+
+        let data = {
+          cabinet: this.cabinet,
+          pays: this.pays,
+          nom: this.nom,
+          prenom: this.prenom,
+          email: this.email,
+          telephone: this.telephone,
+          message: this.message,
+        };
+
+        console.log(data);
+
+        axios
+          .post("https://zlawyercontact.azurewebsites.net/api/contact", data, {
+            headers: {
+              Accept: "application/json",
+            },
+          })
+          .then(
+            (response) => {
+              console.log("SUCCESS");
+              this.isSuccess = response.status === 200 ? true : false;
+              this.response = response.data;
+              this.$router.push("/contact-success");
+            },
+            (response) => {
+              console.log("ERROR");
+              this.response = response.response.data;
+            }
+          );
+      } catch (e) {
+        console.error(e);
+      }
     },
   },
 };
 </script>
 
 <style scoped>
-
-.container-contact{
+.container-contact {
   min-height: 950px;
   height: 100vh;
   display: flex;
@@ -296,17 +315,21 @@ export default {
   font-family: "Roboto-medium", sans-serif;
   color: #394454b5;
 }
-
-
 .contact-card-form {
   display: flex;
   flex-direction: column;
 }
 
+.g-recaptcha {
+  margin-top: 1rem;
+}
+
 .text-response {
-  position: absolute;
-  left: 50%;
-  top: 200px;
-  transform: translate(-50%, -50%);
+  padding-top: 1rem;
+}
+
+.text-response,
+.g-recaptcha {
+  padding-left: 0.5rem;
 }
 </style>
