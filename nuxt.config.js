@@ -14,7 +14,14 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    ],
+    script: [
+      {
+        src: "./static/scripts/cookies.js",
+        async: true,
+        crossorigin: "anonymous"
+      },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css

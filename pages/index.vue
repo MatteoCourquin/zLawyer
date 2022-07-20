@@ -44,7 +44,7 @@ export default {
     Footer,
     Zendesk,
   },
-  beforeMounted() {
+  mounted() {
     window.axeptioSettings = {
       clientId: "62d841060c47121494b0034d",
       cookiesVersion: "zlawyer-fr",
