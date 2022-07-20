@@ -16,7 +16,6 @@
     "gsap": "^3.10.4",
     "h3": "^0.3.9",
     "nuxt": "^2.15.7",
-    "nuxt-universal-cookies": "^0.0.5",
     "typewriter-vue": "^0.5.19",
     "vue-analytics": "^5.22.1"
   },

@@ -11,7 +11,6 @@
     <Clients />
     <Pricing />
     <Footer />
-    <Cookies />
   </div>
 </template>
 
@@ -27,7 +26,6 @@ import Testimonials from "../components/index/Testimonials.vue";
 import Infos from "../components/index/Infos.vue";
 import Pricing from "../components/index/Pricing.vue";
 import Footer from "../components/Footer.vue";
-import Cookies from "../components/cookies/Cookies.vue";
 
 export default {
   components: {
@@ -42,7 +40,6 @@ export default {
     Infos,
     Pricing,
     Footer,
-    Cookies,
   },
 };
 </script>

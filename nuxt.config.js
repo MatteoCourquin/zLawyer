@@ -50,8 +50,8 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-<<<<<<< HEAD
     '@nuxtjs/recaptcha',
+  
   ],
 
   publicRuntimeConfig: {
@@ -65,13 +65,6 @@ export default {
       size: 'normal'        // Size: 'compact', 'normal', 'invisible' (v2)
     }
   },
-=======
-    {
-      src: 'nuxt-universal-cookies',
-      options: {}
-    }
-  ],
->>>>>>> 0e8bbd7 (add cookies)
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
