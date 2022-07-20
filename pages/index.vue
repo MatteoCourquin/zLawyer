@@ -1,18 +1,18 @@
 <template>
-    <div>
-        <Header class="fixed"/>
-        <Hero/>
-        <Reviews/>
-        <Advantages/>
-        <Adaptive/>
-        <Features/>
-        <Infos/>
-        <Testimonials/>
-        <Clients/>
-        <Pricing/>
-        <Footer/>
-        <Zendesk/>
-    </div>
+  <div>
+    <Header class="fixed" />
+    <Hero />
+    <Reviews />
+    <Advantages />
+    <Adaptive />
+    <Features />
+    <Infos />
+    <Testimonials />
+    <Clients />
+    <Pricing />
+    <Footer />
+    <Zendesk />
+  </div>
 </template>
 
 <script>
@@ -29,5 +29,22 @@ import Infos from '../components/index/Infos.vue';
 import Pricing from '../components/index/Pricing.vue';
 import Footer from '../components/Footer.vue';
 import Zendesk from '../components/index/Zendesk.vue';
-export default { components: { Header, Hero, Reviews, Advantages, Adaptive, Features, Clients, Testimonials, Infos, Pricing, Footer, Zendesk } }
+
+export default {
+    components: { Header, Hero, Reviews, Advantages, Adaptive, Features, Clients, Testimonials, Infos, Pricing, Footer, Zendesk },
+    mounted() {
+        window.axeptioSettings = {
+        clientId: "62d841060c47121494b0034d",
+        cookiesVersion: "zlawyer-fr",
+        };
+        (function (d, s) {
+        var t = d.getElementsByTagName(s)[0],
+            e = d.createElement(s);
+        e.async = true;
+        e.src = "//static.axept.io/sdk.js";
+        t.parentNode.insertBefore(e, t);
+        })(document, "script");
+    },
+}
+
 </script>
