@@ -114,7 +114,7 @@
           <div class="flex flex-col p-2">
             <label for="country">Pays</label>
             <select name="pays" id="pays">
-              <option v-for="pays in allPays" :value="pays">
+              <option v-for="pays in allPays" :key="pays" :value="pays">
                 {{ pays }}
               </option>
             </select>
@@ -164,12 +164,12 @@
 
           <recaptcha />
 
-            <p
-              class="text-response"
-              :class="[isSuccess ? 'text-green-600' : 'text-red-600']"
-            >
-              {{ response }}
-            </p>
+          <p
+            class="text-response"
+            :class="[isSuccess ? 'text-green-600' : 'text-red-600']"
+          >
+            {{ response }}
+          </p>
 
           <button type="submit" class="button-orange mx-2 my-10 w-max">
             Envoyer
@@ -213,44 +213,16 @@ export default {
       response: "",
     };
   },
-  mounted() {
+  async mounted() {
     this.allPays = json;
+    try {
+      await this.$recaptcha.init();
+    } catch (e) {
+      console.error(e);
+    }
   },
   methods: {
-    onSubmit() {
-      let data = {
-        cabinet: this.cabinet,
-        pays: this.pays,
-        nom: this.nom,
-        prenom: this.prenom,
-        email: this.email,
-        telephone: this.telephone,
-        message: this.message,
-      };
-
-      console.log(data);
-
-      axios
-        .post("https://zlawyercontact.azurewebsites.net/api/contact", data, {
-          headers: {
-            Accept: "application/json",
-          },
-        })
-        .then(
-          (response) => {
-            console.log("SUCCESS");
-            this.isSuccess = response.status === 200 ? true : false;
-            this.response = response.data;
-            this.$router.push("/contact-success");
-          },
-          (response) => {
-            console.log("ERROR");
-            this.response = response.response.data;
-          }
-        );
-    },
-
-    async reTry() {
+    async onSubmit() {
       try {
         const token = await this.$recaptcha.getResponse();
         console.log("ReCaptcha token:", token);
@@ -259,16 +231,40 @@ export default {
 
         // at the end you need to reset recaptcha
         await this.$recaptcha.reset();
-      } catch (error) {
-        console.log("Login error:", error);
-      }
-    },
-    onSuccess(token) {
-      console.log("Succeeded:", token);
-    },
 
-    onExpired() {
-      console.log("Expired");
+        let data = {
+          cabinet: this.cabinet,
+          pays: this.pays,
+          nom: this.nom,
+          prenom: this.prenom,
+          email: this.email,
+          telephone: this.telephone,
+          message: this.message,
+        };
+
+        console.log(data);
+
+        axios
+          .post("https://zlawyercontact.azurewebsites.net/api/contact", data, {
+            headers: {
+              Accept: "application/json",
+            },
+          })
+          .then(
+            (response) => {
+              console.log("SUCCESS");
+              this.isSuccess = response.status === 200 ? true : false;
+              this.response = response.data;
+              this.$router.push("/contact-success");
+            },
+            (response) => {
+              console.log("ERROR");
+              this.response = response.response.data;
+            }
+          );
+      } catch (e) {
+        console.error(e);
+      }
     },
   },
 };
