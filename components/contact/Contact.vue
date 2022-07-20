@@ -1,6 +1,6 @@
 <template>
   <div class="max-width-blue-section container-contact">
-    <p class="text-response" :class="[isSuccess ? 'text-green-600' : 'text-red-600']">
+        <p class="text-response" :class="[isSuccess ? 'text-green-600' : 'text-red-600']">
       {{ response }}
     </p>
     <div

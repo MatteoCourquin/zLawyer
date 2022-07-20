@@ -60,7 +60,7 @@ export default {
       hideBadge: false,
       language: 'FR',   // Recaptcha language (v2)
       //mode: 'enterprise',       // Mode: 'base', 'enterprise'
-      siteKey: process.env.RECAPTCHA_SITE_KEY,    // Site key for requests
+      siteKey: '6LeLYOUgAAAAAMLyGgi4_Owoy-HHuvQAgjoElWHN',    // Site key for requests
       version: 2,    // Version
       size: 'normal'        // Size: 'compact', 'normal', 'invisible' (v2)
     }
