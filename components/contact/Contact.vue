@@ -1,5 +1,8 @@
 <template>
   <div class="max-width-blue-section container-contact">
+    <p class="text-response" :class="[isSuccess ? 'text-green-600' : 'text-red-600']">
+      {{ response }}
+    </p>
     <div
       class="card-contact grid xl:grid-cols-2 grid-cols-1 overflow-hidden bg-transparent sm:bg-white mx-auto"
     >
