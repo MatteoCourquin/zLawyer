@@ -11,7 +11,7 @@
     <Clients />
     <Pricing />
     <Footer />
-    <Zendesk />
+    <Cookies />
   </div>
 </template>
 
@@ -27,7 +27,7 @@ import Testimonials from "../components/index/Testimonials.vue";
 import Infos from "../components/index/Infos.vue";
 import Pricing from "../components/index/Pricing.vue";
 import Footer from "../components/Footer.vue";
-import Zendesk from "../components/index/Zendesk.vue";
+import Cookies from "../components/cookies/Cookies.vue";
 
 export default {
   components: {
@@ -42,20 +42,7 @@ export default {
     Infos,
     Pricing,
     Footer,
-    Zendesk,
-  },
-  mounted() {
-    window.axeptioSettings = {
-      clientId: "62d841060c47121494b0034d",
-      cookiesVersion: "zlawyer-fr",
-    };
-    (function (d, s) {
-      var t = d.getElementsByTagName(s)[0],
-        e = d.createElement(s);
-      e.async = true;
-      e.src = "//static.axept.io/sdk.js";
-      t.parentNode.insertBefore(e, t);
-    })(document, "script");
+    Cookies,
   },
 };
 </script>

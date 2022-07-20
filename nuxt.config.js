@@ -17,11 +17,10 @@ export default {
     ],
     script: [
       {
-        src: "./static/scripts/cookies.js",
-        async: true,
-        crossorigin: "anonymous"
+        id: 'ze-snippet', 
+        src: 'https://static.zdassets.com/ekr/snippet.js?key=e2d18a03-a4bd-4b4d-986b-292fec2fcd83'
       },
-    ],
+    ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -51,6 +50,7 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+<<<<<<< HEAD
     '@nuxtjs/recaptcha',
   ],
 
@@ -65,6 +65,13 @@ export default {
       size: 'normal'        // Size: 'compact', 'normal', 'invisible' (v2)
     }
   },
+=======
+    {
+      src: 'nuxt-universal-cookies',
+      options: {}
+    }
+  ],
+>>>>>>> 0e8bbd7 (add cookies)
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

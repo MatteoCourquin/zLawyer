@@ -16,12 +16,14 @@
     "gsap": "^3.10.4",
     "h3": "^0.3.9",
     "nuxt": "^2.15.7",
+    "nuxt-universal-cookies": "^0.0.5",
     "typewriter-vue": "^0.5.19",
     "vue-analytics": "^5.22.1"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^4.2.0",
     "nuxt-gsap-module": "^1.7.1",
-    "postcss": "^8.3.5"
+    "postcss": "^8.3.5",
+    "sass-loader": "^10.1.1"
   }
 }
