@@ -1,8 +1,5 @@
 <template>
   <div class="max-width-blue-section container-contact">
-        <p class="text-response" :class="[isSuccess ? 'text-green-600' : 'text-red-600']">
-      {{ response }}
-    </p>
     <div
       class="card-contact grid xl:grid-cols-2 grid-cols-1 overflow-hidden bg-transparent sm:bg-white mx-auto"
     >
@@ -97,6 +94,10 @@
       <div class="p-10">
         <h2 class="p-2">Contact</h2>
 
+        <p class="text-response" :class="[isSuccess ? 'text-green-600' : 'text-red-600']">
+        {{ response }}
+        </p>
+
         <form
           v-on:submit.prevent="onSubmit()"
           method="POST"
@@ -166,13 +167,6 @@
           </div>
 
           <recaptcha />
-
-          <p
-            class="text-response"
-            :class="[isSuccess ? 'text-green-600' : 'text-red-600']"
-          >
-            {{ response }}
-          </p>
 
           <button type="submit" class="button-orange mx-2 my-10 w-max">
             Envoyer
